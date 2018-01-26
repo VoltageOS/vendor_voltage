@@ -219,7 +219,7 @@ def fetch_dependencies(repo_path, fallback_branch=None):
             dependencies = json.load(dep_f)
     else:
         dependencies = {}
-        print('Dependencies file not found, bailing out.')
+        print('%s has no additional dependencies.' % repo_path)
 
     fetch_list = []
     syncable_repos = []
