@@ -1,0 +1,7 @@
+go_package {
+    name: "soong-voltage",
+    pkgPath: "voltage/soong/android",
+    srcs: [
+        "android/variable.go",
+    ],
+}
