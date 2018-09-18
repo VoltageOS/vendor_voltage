@@ -16,3 +16,6 @@
 
 # Version
 $(call inherit-product, vendor/voltage/config/version.mk)
+
+# Inherit from our kernel/header generator
+$(call inherit-product, vendor/voltage/config/BoardConfigVoltage.mk)
