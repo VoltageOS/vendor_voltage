@@ -88,6 +88,10 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 PRODUCT_PACKAGES += \
     SimpleDeviceConfig
 
+# Charger
+PRODUCT_PACKAGES += \
+    product_charger_res_images
+
 # Storage manager
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.storage_manager.enabled=true
