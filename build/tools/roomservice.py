@@ -29,8 +29,6 @@ import urllib.error
 import urllib.parse
 import urllib.request
 
-default_manifest = ".repo/manifest.xml"
-
 custom_local_manifest = ".repo/local_manifests/voltage.xml"
 custom_default_revision = "12"
 custom_dependencies = "voltage.dependencies"
@@ -71,6 +69,19 @@ def indent(elem, level=0):
         if level and (not elem.tail or not elem.tail.strip()):
             elem.tail = i
 
+def get_manifest_path():
+    '''Find the current manifest path
+    In old versions of repo this is at .repo/manifest.xml
+    In new versions, .repo/manifest.xml includes an include
+    to some arbitrary file in .repo/manifests'''
+
+    m = ElementTree.parse(".repo/manifest.xml")
+    try:
+        m.findall('default')[0]
+        return '.repo/manifest.xml'
+    except IndexError:
+        return ".repo/manifests/{}".format(m.find("include").get("name"))
+
 def load_manifest(manifest):
     try:
         man = ElementTree.parse(manifest).getroot()
@@ -79,12 +90,12 @@ def load_manifest(manifest):
     return man
 
 def get_default(manifest=None):
-    m = manifest or load_manifest(default_manifest)
+    m = manifest or load_manifest(get_manifest_path())
     d = m.findall('default')[0]
     return d
 
 def get_remote(manifest=None, remote_name=None):
-    m = manifest or load_manifest(default_manifest)
+    m = manifest or load_manifest(get_manifest_path())
     if not remote_name:
         remote_name = get_default(manifest=m).get('remote')
     remotes = m.findall('remote')
