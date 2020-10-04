@@ -21,3 +21,6 @@ PRODUCT_PACKAGES := \
     NotoSerif-Bold.ttf \
     NotoSerif-Italic.ttf \
     NotoSerif-Regular.ttf \
+
+# Include extra addon fonts
+-include vendor/proton/fonts/extra/extra.mk
