@@ -2,7 +2,7 @@
 # PRODUCT_COPY_FILES to install the font files, so that the NOTICE file can
 # get installed too.
 
-PRODUCT_PACKAGES := \
+PRODUCT_PACKAGES += \
     CutiveMono.ttf \
     DroidSansMono.ttf \
     Roboto-BlackItalic.ttf \
