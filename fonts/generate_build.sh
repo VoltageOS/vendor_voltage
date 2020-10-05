@@ -68,3 +68,7 @@ prebuilt_font {
     echo "    $android_name \\" >> fonts.mk
 
 done
+
+echo '
+# Include extra addon fonts
+-include vendor/proton/fonts/extra/extra.mk' >> fonts.mk
