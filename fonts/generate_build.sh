@@ -24,7 +24,7 @@ echo '# We have to use PRODUCT_PACKAGES (together with BUILD_PREBUILT) instead o
 # PRODUCT_COPY_FILES to install the font files, so that the NOTICE file can
 # get installed too.
 
-PRODUCT_PACKAGES := \' > fonts.mk
+PRODUCT_PACKAGES := \' >> fonts.mk
 
 rm -f */Android.bp
 
