@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 set -euo pipefail
+shopt -s nullglob
 
 cd "$(dirname "$0")"
 
@@ -28,12 +29,12 @@ PRODUCT_PACKAGES += \' >> fonts.mk
 
 rm -f */Android.bp
 
-for src in */*.otf
+for src in */*.ttf */*.otf
 do
     echo "$src"
 
     font_dir="$(dirname "$src")"
-    src_base="$(basename "$src" .otf)"
+    src_base="$(basename "$(basename "$src" .ttf)" .otf)"
     src_name="$(basename "$src")"
     if [[ "$src" == *"_"* ]]; then
     	# If a name was explicitly specified with an underscore, use it
