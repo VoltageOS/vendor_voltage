@@ -1,11 +1,3 @@
-go_package {
-    name: "soong-voltage",
-    pkgPath: "voltage/soong/android",
-    srcs: [
-        "android/variable.go",
-    ],
-}
-
 bootstrap_go_package {
     name: "soong-voltage-generator",
     pkgPath: "voltage/soong/generator",
