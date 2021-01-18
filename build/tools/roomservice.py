@@ -32,8 +32,12 @@ import urllib.request
 custom_local_manifest = ".repo/local_manifests/voltage.xml"
 custom_default_revision = "12"
 custom_dependencies = "voltage.dependencies"
-org_manifest = "voltage"  # leave empty if org is provided in manifest
-org_display = "VoltageOS"  # needed for displaying
+org_manifest = "VoltageOS-Devices"  # leave empty if org is provided in manifest
+org_display = "VoltageOS-Devices"  # needed for displaying
+
+default_manifest = ".repo/manifests/default.xml"
+voltage_manifest = ".repo/manifests/snippets/voltage.xml"
+lineage_manifest = ".repo/manifests/snippets/lineage.xml"
 
 github_token = None
 
@@ -52,6 +56,15 @@ def add_auth(g_req):
             auth = None
     if github_token:
         g_req.add_header("Authorization", "token %s" % github_token)
+
+def exists_in_tree(lm, repository):
+     for child in lm.getchildren():
+        try:
+            if child.attrib['path'].endswith(repository):
+                return child
+        except:
+            pass
+     return None
 
 def indent(elem, level=0):
     # in-place prettyprint formatter
@@ -124,6 +137,9 @@ def is_in_manifest(project_path):
 
 def add_to_manifest(repos, fallback_branch=None):
     lm = load_manifest(custom_local_manifest)
+    mlm = load_manifest(default_manifest)
+    voltagem = load_manifest(voltage_manifest)
+    lineagem = load_manifest(lineage_manifest)
 
     for repo in repos:
 
@@ -152,6 +168,21 @@ def add_to_manifest(repos, fallback_branch=None):
         if is_in_manifest(repo_path):
             print('%s already exists in the manifest', repo_path)
             continue
+
+        existing_m_project = None
+        if exists_in_tree(mlm, repo_path) != None:
+           existing_m_project = exists_in_tree(mlm, repo_path)
+        elif exists_in_tree(voltagem, repo_path) != None:
+             existing_m_project = exists_in_tree(voltagem, repo_path)
+        elif exists_in_tree(lineagem, repo_path) != None:
+             existing_m_project = exists_in_tree(lineagem, repo_path)
+
+        if existing_m_project != None:
+            if existing_m_project.attrib['path'] == repo['target_path']:
+                print('%s already exists in main manifest, replacing with new dep' % repo_name)
+                lm.append(ElementTree.Element("remove-project", attrib = {
+                    "name": existing_m_project.attrib['name']
+                }))
 
         print('Adding dependency:\nRepository: %s\nBranch: %s\nRemote: %s\nPath: %s\n' % (repo_name, repo_branch,repo_remote, repo_path))
 
