@@ -58,7 +58,7 @@ def add_auth(g_req):
         g_req.add_header("Authorization", "token %s" % github_token)
 
 def exists_in_tree(lm, repository):
-     for child in lm.getchildren():
+     for child in list(lm):
         try:
             if child.attrib['path'].endswith(repository):
                 return child
