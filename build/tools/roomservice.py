@@ -35,30 +35,23 @@ custom_dependencies = "voltage.dependencies"
 org_manifest = "github/voltage-devices"  # leave empty if org is provided in manifest
 org_display = "voltage-devices"  # needed for displaying
 
-github_auth = None
-
+github_token = None
 
 local_manifests = '.repo/local_manifests'
 if not os.path.exists(local_manifests):
     os.makedirs(local_manifests)
 
-
 def add_auth(g_req):
-    global github_auth
-    if github_auth is None:
+    global github_token
+    if github_token is None:
+        # get token from .netrc if possible
         try:
             auth = netrc.netrc().authenticators("api.github.com")
+            github_token = auth[2]
         except (netrc.NetrcParseError, IOError):
             auth = None
-        if auth:
-            github_auth = base64.b64encode(
-                ('%s:%s' % (auth[0], auth[2])).encode()
-            )
-        else:
-            github_auth = ""
-    if github_auth:
-        g_req.add_header("Authorization", "Basic %s" % github_auth)
-
+    if github_token:
+        g_req.add_header("Authorization", "token %s" % github_token)
 
 def indent(elem, level=0):
     # in-place prettyprint formatter
@@ -76,7 +69,6 @@ def indent(elem, level=0):
         if level and (not elem.tail or not elem.tail.strip()):
             elem.tail = i
 
-
 def load_manifest(manifest):
     try:
         man = ElementTree.parse(manifest).getroot()
@@ -84,12 +76,10 @@ def load_manifest(manifest):
         man = ElementTree.Element("manifest")
     return man
 
-
 def get_default(manifest=None):
     m = manifest or load_manifest(default_manifest)
     d = m.findall('default')[0]
     return d
-
 
 def get_remote(manifest=None, remote_name=None):
     m = manifest or load_manifest(default_manifest)
@@ -99,7 +89,6 @@ def get_remote(manifest=None, remote_name=None):
     for remote in remotes:
         if remote_name == remote.get('name'):
             return remote
-
 
 def get_revision(manifest=None, p="build"):
     return custom_default_revision
@@ -112,7 +101,6 @@ def get_from_manifest(device_name):
             if lp.startswith("device/") and lp.endswith("/" + device_name):
                 return lp
     return None
-
 
 def is_in_manifest(project_path):
     for local_path in load_manifest(custom_local_manifest).findall("project"):
@@ -185,7 +173,6 @@ def add_to_manifest(repos, fallback_branch=None):
 
 _fetch_dep_cache = []
 
-
 def fetch_dependencies(repo_path, fallback_branch=None):
     global _fetch_dep_cache
     if repo_path in _fetch_dep_cache:
@@ -227,10 +214,8 @@ def fetch_dependencies(repo_path, fallback_branch=None):
     for deprepo in syncable_repos:
         fetch_dependencies(deprepo)
 
-
 def has_branch(branches, revision):
     return revision in (branch['name'] for branch in branches)
-
 
 def detect_revision(repo):
     """
@@ -266,7 +251,6 @@ def detect_revision(repo):
     print("Use the ROOMSERVICE_BRANCHES environment variable to "
           "specify a list of fallback branches.")
     sys.exit()
-
 
 def main():
     try:
