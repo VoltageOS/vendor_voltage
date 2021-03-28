@@ -211,7 +211,7 @@ def fetch_dependencies(repo_path, fallback_branch=None):
 
     if syncable_repos:
         print('Syncing dependencies')
-        os.system('repo sync --force-sync --no-tags --current-branch --no-clone-bundle %s' % ' '.join(syncable_repos))
+        os.system('repo sync -c -q --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j%d %s' % (os.cpu_count(), ' '.join(syncable_repos)))
 
     for deprepo in syncable_repos:
         fetch_dependencies(deprepo)
