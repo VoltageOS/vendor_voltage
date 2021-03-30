@@ -166,16 +166,16 @@ def add_to_manifest(repos, fallback_branch=None):
             repo_remote="github"
 
         if is_in_manifest(repo_path):
-            print('%s already exists in the manifest', repo_path)
+            print('%s already exists in the local manifest', repo_path)
             continue
 
         existing_m_project = None
-        if exists_in_tree(mlm, repo_path) != None:
-           existing_m_project = exists_in_tree(mlm, repo_path)
-        elif exists_in_tree(voltagem, repo_path) != None:
-             existing_m_project = exists_in_tree(voltagem, repo_path)
+        if exists_in_tree(voltagem, repo_path) != None:
+            existing_m_project = exists_in_tree(voltagem, repo_path)
         elif exists_in_tree(lineagem, repo_path) != None:
-             existing_m_project = exists_in_tree(lineagem, repo_path)
+            existing_m_project = exists_in_tree(lineagem, repo_path)
+        elif exists_in_tree(mlm, repo_path) != None:
+            existing_m_project = exists_in_tree(mlm, repo_path)
 
         if existing_m_project != None:
             if existing_m_project.attrib['path'] == repo['target_path']:
@@ -184,7 +184,7 @@ def add_to_manifest(repos, fallback_branch=None):
                     "name": existing_m_project.attrib['name']
                 }))
 
-        print('Adding dependency:\nRepository: %s\nBranch: %s\nRemote: %s\nPath: %s\n' % (repo_name, repo_branch,repo_remote, repo_path))
+        print('Adding dependency:\nRepository: %s\nBranch: %s\nRemote: %s\nPath: %s\n' % (repo_name, repo_branch, repo_remote, repo_path))
 
         project = ElementTree.Element(
             "project",
