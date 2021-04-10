@@ -35,6 +35,8 @@ SOONG_CONFIG_NAMESPACES += voltageQcomVars
 SOONG_CONFIG_voltageQcomVars += \
     supports_extended_compress_format \
     legacy_hw_disk_encryption \
+    supports_audio_accessory \
+    supports_debug_accessory \
     uses_pre_uplink_features_netmgrd \
     uses_qti_camera_device
 
@@ -48,6 +50,8 @@ endif
 SOONG_CONFIG_voltageQcomVars_supports_extended_compress_format := $(AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT)
 SOONG_CONFIG_voltageQcomVars_uses_qti_camera_device := $(TARGET_USES_QTI_CAMERA_DEVICE)
 SOONG_CONFIG_voltageQcomVars_legacy_hw_disk_encryption := $(TARGET_LEGACY_HW_DISK_ENCRYPTION)
+SOONG_CONFIG_voltageQcomVars_supports_audio_accessory := $(TARGET_QTI_USB_SUPPORTS_AUDIO_ACCESSORY)
+SOONG_CONFIG_voltageQcomVars_supports_debug_accessory := $(TARGET_QTI_USB_SUPPORTS_DEBUG_ACCESSORY)
 SOONG_CONFIG_voltageQcomVars_uses_pre_uplink_features_netmgrd := $(TARGET_USES_PRE_UPLINK_FEATURES_NETMGRD)
 
 # Set default values
