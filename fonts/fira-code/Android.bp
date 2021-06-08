@@ -16,10 +16,10 @@
 
 prebuilt_font {
     name: "CutiveMono.ttf",
-    src: "FiraCode-Regular_CutiveMono.otf",
+    src: "FiraCode-Regular_CutiveMono.ttf",
 }
 
 prebuilt_font {
     name: "DroidSansMono.ttf",
-    src: "FiraCode-Regular_DroidSansMono.otf",
+    src: "FiraCode-Regular_DroidSansMono.ttf",
 }

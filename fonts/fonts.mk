@@ -17,6 +17,8 @@
 # get installed too.
 
 PRODUCT_PACKAGES += \
+    CutiveMono.ttf \
+    DroidSansMono.ttf \
     RobotoFallback-BlackItalic.ttf \
     RobotoFallback-Black.ttf \
     RobotoFallback-BoldItalic.ttf \
@@ -29,8 +31,6 @@ PRODUCT_PACKAGES += \
     RobotoFallback-Regular.ttf \
     RobotoFallback-ThinItalic.ttf \
     RobotoFallback-Thin.ttf \
-    CutiveMono.ttf \
-    DroidSansMono.ttf \
     Roboto-BlackItalic.ttf \
     Roboto-Black.ttf \
     Roboto-BoldItalic.ttf \
