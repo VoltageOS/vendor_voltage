@@ -41,7 +41,7 @@ do
 	android_name="$(cut -d'_' -f2 <<< "$src_base").ttf"
     else
     	# Use heuristics to construct a name
-	android_name="$(sed -e 's/Inter/Roboto/; s/SFUIText/Roboto/; s/SourceSerifPro/NotoSerif/' <<< "$src_base").ttf"
+	android_name="$(sed -e 's/Inter/Roboto/; s/SFUIText/Roboto/; s/SourceSerif4/NotoSerif/' <<< "$src_base").ttf"
     fi
 
     if [[ ! -f "$font_dir/Android.bp" ]]; then

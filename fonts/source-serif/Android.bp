@@ -16,20 +16,20 @@
 
 prebuilt_font {
     name: "NotoSerif-BoldItalic.ttf",
-    src: "SourceSerifPro-BoldItalic.otf",
+    src: "SourceSerif4-BoldItalic.otf",
 }
 
 prebuilt_font {
     name: "NotoSerif-Bold.ttf",
-    src: "SourceSerifPro-Bold.otf",
+    src: "SourceSerif4-Bold.otf",
 }
 
 prebuilt_font {
     name: "NotoSerif-Italic.ttf",
-    src: "SourceSerifPro-Italic.otf",
+    src: "SourceSerif4-Italic.otf",
 }
 
 prebuilt_font {
     name: "NotoSerif-Regular.ttf",
-    src: "SourceSerifPro-Regular.otf",
+    src: "SourceSerif4-Regular.otf",
 }
