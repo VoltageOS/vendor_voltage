@@ -46,7 +46,7 @@ do
 
     if [[ ! -f "$font_dir/Android.bp" ]]; then
         echo '/**
- * Copyright (C) 2020 The Proton AOSP Project
+ * Copyright (C) 2021 The Proton AOSP Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
