@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-ttx *.ttf
+ttx ${@:-*.ttf}
 
 function replace_name() {
   cur_name=$1
@@ -21,7 +21,7 @@ replace_name "Source Serif Pro" "Noto Serif" NotoSerif-*.ttx
 replace_name "Fira Code" "Cutive Mono" CutiveMono.ttx
 replace_name "Fira Code" "Droid Sans Mono" DroidSansMono.ttx
 
-rm *.ttf
+rm ${@:-*.ttf}
 ttx *.ttx
 rm *.ttx
 rename otf ttf *
