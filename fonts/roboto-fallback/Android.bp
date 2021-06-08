@@ -1,0 +1,75 @@
+/**
+ * Copyright (C) 2021 The Proton AOSP Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+prebuilt_font {
+    name: "RobotoFallback-BlackItalic.ttf",
+    src: "RobotoFallback-BlackItalic.ttf",
+}
+
+prebuilt_font {
+    name: "RobotoFallback-Black.ttf",
+    src: "RobotoFallback-Black.ttf",
+}
+
+prebuilt_font {
+    name: "RobotoFallback-BoldItalic.ttf",
+    src: "RobotoFallback-BoldItalic.ttf",
+}
+
+prebuilt_font {
+    name: "RobotoFallback-Bold.ttf",
+    src: "RobotoFallback-Bold.ttf",
+}
+
+prebuilt_font {
+    name: "RobotoFallback-Italic.ttf",
+    src: "RobotoFallback-Italic.ttf",
+}
+
+prebuilt_font {
+    name: "RobotoFallback-LightItalic.ttf",
+    src: "RobotoFallback-LightItalic.ttf",
+}
+
+prebuilt_font {
+    name: "RobotoFallback-Light.ttf",
+    src: "RobotoFallback-Light.ttf",
+}
+
+prebuilt_font {
+    name: "RobotoFallback-MediumItalic.ttf",
+    src: "RobotoFallback-MediumItalic.ttf",
+}
+
+prebuilt_font {
+    name: "RobotoFallback-Medium.ttf",
+    src: "RobotoFallback-Medium.ttf",
+}
+
+prebuilt_font {
+    name: "RobotoFallback-Regular.ttf",
+    src: "RobotoFallback-Regular.ttf",
+}
+
+prebuilt_font {
+    name: "RobotoFallback-ThinItalic.ttf",
+    src: "RobotoFallback-ThinItalic.ttf",
+}
+
+prebuilt_font {
+    name: "RobotoFallback-Thin.ttf",
+    src: "RobotoFallback-Thin.ttf",
+}

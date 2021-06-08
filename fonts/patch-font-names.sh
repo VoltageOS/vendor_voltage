@@ -14,6 +14,7 @@ function replace_name() {
   sed -i "s/^      $cur_name \([^UiP].*\)$/      $tgt_name \1/" "$@"
 }
 
+replace_name "Roboto" "Roboto Fallback" RobotoFallback-*.ttx
 replace_name "Inter" "Roboto" Roboto-*.ttx
 replace_name "Inter" "Google Sans" GoogleSans-*.ttx
 replace_name "Source Serif Pro" "Noto Serif" NotoSerif-*.ttx
