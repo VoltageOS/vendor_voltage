@@ -8,7 +8,6 @@ DEST_DIR = f"{os.path.dirname(os.path.realpath(__file__))}/overlays"
 
 # (user-facing name, font family name)
 FONTS = {
-    "Fira Sans": "fira-sans",
     "HK Grotesk": "hk-grotesk",
     "Manrope": "manrope",
     "Noto Sans": "noto-sans",

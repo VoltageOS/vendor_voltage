@@ -22,22 +22,6 @@
         Static fonts
     -->
 
-    <family customizationType="new-named-family" name="fira-sans">
-        <font weight="100" style="normal">FiraSans-Thin.otf</font>
-        <font weight="100" style="italic">FiraSans-ThinItalic.otf</font>
-        <font weight="300" style="normal">FiraSans-Light.otf</font>
-        <font weight="300" style="italic">FiraSans-LightItalic.otf</font>
-        <font weight="400" style="normal">FiraSans-Regular.otf</font>
-        <font weight="400" style="italic">FiraSans-Italic.otf</font>
-        <font weight="500" style="normal">FiraSans-Medium.otf</font>
-        <font weight="500" style="italic">FiraSans-MediumItalic.otf</font>
-        <font weight="900" style="normal">FiraSans-Black.otf</font>
-        <font weight="900" style="italic">FiraSans-BlackItalic.otf</font>
-        <font weight="700" style="normal">FiraSans-Bold.otf</font>
-        <font weight="700" style="italic">FiraSans-BoldItalic.otf</font>
-    </family>
-    <alias name="fira-sans-medium" to="fira-sans" weight="500" />
-
     <family customizationType="new-named-family" name="hk-grotesk">
         <font weight="100" style="normal">HKGrotesk-Thin.otf</font>
         <font weight="100" style="italic">HKGrotesk-ThinItalic.otf</font>
