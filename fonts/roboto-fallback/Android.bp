@@ -15,61 +15,6 @@
  */
 
 prebuilt_font {
-    name: "RobotoFallback-BlackItalic.ttf",
-    src: "RobotoFallback-BlackItalic.ttf",
-}
-
-prebuilt_font {
-    name: "RobotoFallback-Black.ttf",
-    src: "RobotoFallback-Black.ttf",
-}
-
-prebuilt_font {
-    name: "RobotoFallback-BoldItalic.ttf",
-    src: "RobotoFallback-BoldItalic.ttf",
-}
-
-prebuilt_font {
-    name: "RobotoFallback-Bold.ttf",
-    src: "RobotoFallback-Bold.ttf",
-}
-
-prebuilt_font {
-    name: "RobotoFallback-Italic.ttf",
-    src: "RobotoFallback-Italic.ttf",
-}
-
-prebuilt_font {
-    name: "RobotoFallback-LightItalic.ttf",
-    src: "RobotoFallback-LightItalic.ttf",
-}
-
-prebuilt_font {
-    name: "RobotoFallback-Light.ttf",
-    src: "RobotoFallback-Light.ttf",
-}
-
-prebuilt_font {
-    name: "RobotoFallback-MediumItalic.ttf",
-    src: "RobotoFallback-MediumItalic.ttf",
-}
-
-prebuilt_font {
-    name: "RobotoFallback-Medium.ttf",
-    src: "RobotoFallback-Medium.ttf",
-}
-
-prebuilt_font {
-    name: "RobotoFallback-Regular.ttf",
-    src: "RobotoFallback-Regular.ttf",
-}
-
-prebuilt_font {
-    name: "RobotoFallback-ThinItalic.ttf",
-    src: "RobotoFallback-ThinItalic.ttf",
-}
-
-prebuilt_font {
-    name: "RobotoFallback-Thin.ttf",
-    src: "RobotoFallback-Thin.ttf",
+    name: "RobotoFallback-VF.ttf",
+    src: "RobotoFallback-VF.ttf",
 }
