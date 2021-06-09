@@ -24,13 +24,12 @@ PRODUCT_COPY_FILES += \
 
 # Overlays for UI font styles
 PRODUCT_PACKAGES += \
-    FontRobotoOverlay \
     FontFiraSansOverlay \
     FontHKGroteskOverlay \
     FontManropeOverlay \
     FontNotoSansOverlay \
     FontRecursiveCasualOverlay \
     FontRecursiveLinearOverlay \
-    FontRubikOverlay \
+    FontRobotoOverlay \
     FontSourceSansOverlay \
     FontSourceSerifOverlay \

@@ -15,7 +15,6 @@ FONTS = {
     "Recursive Casual": "recursive-casual",
     "Recursive Linear": "recursive",
     "Roboto": "roboto-system",
-    "Rubik": "rubik",
     "Source Sans": "source-sans",
     "Source Serif": "serif",
 }

@@ -102,46 +102,6 @@
     </family>
     <alias name="noto-sans-medium" to="noto-sans" weight="500" />
 
-    <family customizationType="new-named-family" name="rubik">
-        <font weight="400" style="normal">Rubik-VF.ttf
-            <axis tag="wght" stylevalue="400"/>
-        </font>
-        <font weight="400" style="italic">Rubik-Italic-VF.ttf
-            <axis tag="wght" stylevalue="400"/>
-        </font>
-        <font weight="500" style="normal">Rubik-VF.ttf
-            <axis tag="wght" stylevalue="500"/>
-        </font>
-        <font weight="500" style="italic">Rubik-Italic-VF.ttf
-            <axis tag="wght" stylevalue="500"/>
-        </font>
-        <font weight="600" style="normal">Rubik-VF.ttf
-            <axis tag="wght" stylevalue="600"/>
-        </font>
-        <font weight="600" style="italic">Rubik-Italic-VF.ttf
-            <axis tag="wght" stylevalue="600"/>
-        </font>
-        <font weight="700" style="normal">Rubik-VF.ttf
-            <axis tag="wght" stylevalue="700"/>
-        </font>
-        <font weight="700" style="italic">Rubik-Italic-VF.ttf
-            <axis tag="wght" stylevalue="700"/>
-        </font>
-        <font weight="800" style="normal">Rubik-VF.ttf
-            <axis tag="wght" stylevalue="800"/>
-        </font>
-        <font weight="800" style="italic">Rubik-Italic-VF.ttf
-            <axis tag="wght" stylevalue="800"/>
-        </font>
-        <font weight="900" style="normal">Rubik-VF.ttf
-            <axis tag="wght" stylevalue="900"/>
-        </font>
-        <font weight="900" style="italic">Rubik-Italic-VF.ttf
-            <axis tag="wght" stylevalue="900"/>
-        </font>
-    </family>
-    <alias name="rubik-medium" to="rubik" weight="500" />
-
     <family customizationType="new-named-family" name="source-sans">
         <font weight="400" style="normal">SourceSans3-VF.otf
             <axis tag="wght" stylevalue="400"/>
