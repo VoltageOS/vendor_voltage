@@ -16,6 +16,8 @@ FONTS = {
     "Roboto": "roboto-system",
     "Source Sans": "source-sans",
     "Source Serif": "serif",
+    "HarmonyOS Sans": "harmonyos-sans",
+    "+Jakarta Sans": "plusjakarta-sans",
 }
 
 # Android.mk
@@ -104,8 +106,8 @@ CONFIG_XML_TEMPLATE = """<?xml version="1.0" encoding="UTF-8"?>
 
 def main():
     for user_name, family_name in FONTS.items():
-        pkg_apk_name = user_name.replace(" ", "")
-        pkg_name = user_name.lower().replace(" ", "_")
+        pkg_apk_name = user_name.replace(" ", "").replace("+", "Plus")
+        pkg_name = user_name.lower().replace(" ", "_").replace("+", "plus_")
         apk_name = f"Font{pkg_apk_name}Overlay"
         pkg_dir = f"{DEST_DIR}/{apk_name}"
 

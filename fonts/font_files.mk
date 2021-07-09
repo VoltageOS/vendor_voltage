@@ -21,26 +21,24 @@ LOCAL_PATH := vendor/proton/fonts
 PRODUCT_PACKAGES += \
     CutiveMono.ttf \
     DroidSansMono.ttf \
+    HarmonyOSSans-BlackItalic.ttf \
+    HarmonyOSSans-Black.ttf \
+    HarmonyOSSans-BoldItalic.ttf \
+    HarmonyOSSans-Bold.ttf \
+    HarmonyOSSans-Italic.ttf \
+    HarmonyOSSans-LightItalic.ttf \
+    HarmonyOSSans-Light.ttf \
+    HarmonyOSSans-MediumItalic.ttf \
+    HarmonyOSSans-Medium.ttf \
+    HarmonyOSSans-Regular.ttf \
+    HarmonyOSSans-ThinItalic.ttf \
+    HarmonyOSSans-Thin.ttf \
     Manrope-VF.ttf \
     NotoSans-Italic-VF.ttf \
     NotoSans-VF.ttf \
     Recursive-VF.ttf \
     RobotoFallback-VF.ttf \
     RobotoSystem-VF.ttf \
-    Rubik-Italic-VF.ttf \
-    Rubik-VF.ttf \
-    FiraSans-BlackItalic.otf \
-    FiraSans-Black.otf \
-    FiraSans-BoldItalic.otf \
-    FiraSans-Bold.otf \
-    FiraSans-Italic.otf \
-    FiraSans-LightItalic.otf \
-    FiraSans-Light.otf \
-    FiraSans-MediumItalic.otf \
-    FiraSans-Medium.otf \
-    FiraSans-Regular.otf \
-    FiraSans-ThinItalic.otf \
-    FiraSans-Thin.otf \
     HKGrotesk-BlackItalic.otf \
     HKGrotesk-Black.otf \
     HKGrotesk-BoldItalic.otf \

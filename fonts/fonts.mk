@@ -32,3 +32,4 @@ PRODUCT_PACKAGES += \
     FontRobotoOverlay \
     FontSourceSansOverlay \
     FontSourceSerifOverlay \
+    FontHarmonyOSSansOverlay \

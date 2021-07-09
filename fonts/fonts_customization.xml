@@ -38,6 +38,22 @@
     </family>
     <alias name="hk-grotesk-medium" to="hk-grotesk" weight="500" />
 
+    <family customizationType="new-named-family" name="harmonyos-sans">
+        <font weight="100" style="normal">HarmonyOSSans-Thin.ttf</font>
+        <font weight="100" style="italic">HarmonyOSSans-ThinItalic.ttf</font>
+        <font weight="300" style="normal">HarmonyOSSans-Light.ttf</font>
+        <font weight="300" style="italic">HarmonyOSSans-LightItalic.ttf</font>
+        <font weight="400" style="normal">HarmonyOSSans-Regular.ttf</font>
+        <font weight="400" style="italic">HarmonyOSSans-Italic.ttf</font>
+        <font weight="500" style="normal">HarmonyOSSans-Medium.ttf</font>
+        <font weight="500" style="italic">HarmonyOSSans-MediumItalic.ttf</font>
+        <font weight="900" style="normal">HarmonyOSSans-Black.ttf</font>
+        <font weight="900" style="italic">HarmonyOSSans-BlackItalic.ttf</font>
+        <font weight="700" style="normal">HarmonyOSSans-Bold.ttf</font>
+        <font weight="700" style="italic">HarmonyOSSans-BoldItalic.ttf</font>
+    </family>
+    <alias name="harmonyos-sans-medium" to="harmonyos-sans" weight="500" />
+
     <!--
         Variable fonts
     -->
