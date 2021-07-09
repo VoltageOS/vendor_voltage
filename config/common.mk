@@ -123,7 +123,7 @@ include vendor/voltage/config/bootanimation.mk
 $(call inherit-product, vendor/voltage/fonts/fonts.mk)
 
 # Audio
-$(call inherit-product, vendor/proton/audio/audio.mk)
+$(call inherit-product, vendor/voltage/audio/audio.mk)
 
 # Include extra packages
 include vendor/voltage/config/packages.mk
