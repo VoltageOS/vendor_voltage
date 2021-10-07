@@ -1,5 +1,5 @@
-# Inherit common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_mobile.mk)
+# Inherit common Voltage stuff
+$(call inherit-product, vendor/voltage/config/common_mobile.mk)
 
 PRODUCT_SIZE := full
 
@@ -10,8 +10,8 @@ $(call inherit-product-if-exists, external/google-fonts/rubik/fonts.mk)
 # Fonts
 PRODUCT_PACKAGES += \
     fonts_customization.xml \
-    LineageLatoFont \
-    LineageRubikFont
+    VoltageLatoFont \
+    VoltageRubikFont
 
 # Recorder
 PRODUCT_PACKAGES += \

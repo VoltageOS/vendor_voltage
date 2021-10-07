@@ -1,25 +1,18 @@
-# Build fingerprint
-ifneq ($(BUILD_FINGERPRINT),)
+BUILD_NUMBER_CUSTOM := $(shell date -u +%H%M)
+
+BUILD_SIGNATURE_KEYS := release-keys
+
+BUILD_FINGERPRINT := $(PRODUCT_BRAND)/$(TARGET_DEVICE)/$(TARGET_DEVICE):$(PLATFORM_VERSION)/$(BUILD_ID)/$(BUILD_NUMBER_CUSTOM):$(TARGET_BUILD_VARIANT)/$(BUILD_SIGNATURE_KEYS)
 ADDITIONAL_BUILD_PROPERTIES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
-endif
 
-# LineageOS System Version
+# Voltageos System Version
 ADDITIONAL_BUILD_PROPERTIES += \
-    ro.lineage.version=$(LINEAGE_VERSION) \
-    ro.lineage.releasetype=$(LINEAGE_BUILDTYPE) \
-    ro.lineage.build.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR) \
-    ro.modversion=$(LINEAGE_VERSION) \
-    ro.lineagelegal.url=https://lineageos.org/legal
-
-# LineageOS Platform Display Version
-ADDITIONAL_BUILD_PROPERTIES += \
-    ro.lineage.display.version=$(LINEAGE_DISPLAY_VERSION)
-
-# LineageOS Platform SDK Version
-ADDITIONAL_BUILD_PROPERTIES += \
-    ro.lineage.build.version.plat.sdk=$(LINEAGE_PLATFORM_SDK_VERSION)
-
-# LineageOS Platform Internal Version
-ADDITIONAL_BUILD_PROPERTIES += \
-    ro.lineage.build.version.plat.rev=$(LINEAGE_PLATFORM_REV)
+  ro.voltage.version=$(VOLTAGE_DISPLAY_VERSION) \
+  ro.voltage.build.status=$(VOLTAGE_BUILD_TYPE) \
+  ro.modversion=$(VOLTAGE_MOD_VERSION) \
+  ro.voltage.build.date=$(BUILD_DATE) \
+  ro.voltage.buildtype=$(VOLTAGE_BUILD_TYPE) \
+  ro.voltage.fingerprint=$(VOLTAGE_FINGERPRINT) \
+  ro.voltage.device=$(VOLTAGE_BUILD) \
+  org.voltage.version=$(VOLTAGEVERSION)
