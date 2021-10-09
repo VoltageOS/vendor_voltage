@@ -17,33 +17,28 @@ FONTS = {
     "Source Serif": "serif",
 }
 
-# Android.mk
-ANDROID_MK_TEMPLATE = """#
-# Copyright (C) 2021 The Proton AOSP Project
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#     http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-#
+# Android.bp
+ANDROID_BP_TEMPLATE = """//
+// Copyright (C) 2021 The Proton AOSP Project
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+//
 
-LOCAL_PATH := $(call my-dir)
-include $(CLEAR_VARS)
-
-LOCAL_RRO_THEME := Font%APKNAME%
-LOCAL_PRODUCT_MODULE := true
-LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res
-LOCAL_PACKAGE_NAME := Font%APKNAME%Overlay
-LOCAL_SDK_VERSION := current
-
-include $(BUILD_RRO_PACKAGE)
+runtime_resource_overlay {{
+    name: "Font{apk_name}Overlay",
+    theme: "Font{apk_name}",
+    product_specific: true,
+}}
 """
 
 # AndroidManifest.xml
@@ -63,14 +58,14 @@ ANDROID_MANIFEST_TEMPLATE = """<!--
     limitations under the License.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.protonaosp.theme.font.%PKGNAME%">
+    package="org.protonaosp.theme.font.{pkg_name}">
 
     <overlay android:targetPackage="android"
         android:category="android.theme.customization.font"
         android:priority="1" />
 
     <application
-        android:label="%USERNAME%"
+        android:label="{user_name}"
         android:hasCode="false" />
 
 </manifest>
@@ -94,10 +89,10 @@ CONFIG_XML_TEMPLATE = """<?xml version="1.0" encoding="UTF-8"?>
     limitations under the License.
 -->
 <resources>
-    <string name="config_bodyFontFamily" translatable="false">%FONTNAME%</string>
-    <string name="config_bodyFontFamilyMedium" translatable="false">%FONTNAME%-medium</string>
-    <string name="config_headlineFontFamily" translatable="false">%FONTNAME%</string>
-    <string name="config_headlineFontFamilyMedium" translatable="false">%FONTNAME%-medium</string>
+    <string name="config_bodyFontFamily" translatable="false">{font_name}</string>
+    <string name="config_bodyFontFamilyMedium" translatable="false">{font_name}-medium</string>
+    <string name="config_headlineFontFamily" translatable="false">{font_name}</string>
+    <string name="config_headlineFontFamilyMedium" translatable="false">{font_name}-medium</string>
 </resources>
 """
 
@@ -114,13 +109,13 @@ def main():
         xml_dir = f"{pkg_dir}/res/values"
         os.makedirs(xml_dir, exist_ok=True)
         with open(f"{xml_dir}/config.xml", "w+") as f:
-            f.write(CONFIG_XML_TEMPLATE.replace("%FONTNAME%", family_name))
+            f.write(CONFIG_XML_TEMPLATE.format(font_name=family_name))
 
-        with open(f"{pkg_dir}/Android.mk", "w+") as f:
-            f.write(ANDROID_MK_TEMPLATE.replace("%APKNAME%", pkg_apk_name))
+        with open(f"{pkg_dir}/Android.bp", "w+") as f:
+            f.write(ANDROID_BP_TEMPLATE.format(apk_name=pkg_apk_name))
 
         with open(f"{pkg_dir}/AndroidManifest.xml", "w+") as f:
-            f.write(ANDROID_MANIFEST_TEMPLATE.replace("%PKGNAME%", pkg_name).replace("%USERNAME%", user_name))
+            f.write(ANDROID_MANIFEST_TEMPLATE.format(pkg_name=pkg_name, user_name=user_name))
 
 if __name__ == '__main__':
     main()
