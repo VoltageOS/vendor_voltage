@@ -18,46 +18,6 @@
     <!-- Alias for Source Serif to fit the naming convention -->
     <alias name="serif-medium" to="serif" weight="700" />
 
-    <!--
-        Static fonts
-    -->
-
-    <family customizationType="new-named-family" name="hk-grotesk">
-        <font weight="100" style="normal">HKGrotesk-Thin.otf</font>
-        <font weight="100" style="italic">HKGrotesk-ThinItalic.otf</font>
-        <font weight="300" style="normal">HKGrotesk-Light.otf</font>
-        <font weight="300" style="italic">HKGrotesk-LightItalic.otf</font>
-        <font weight="400" style="normal">HKGrotesk-Regular.otf</font>
-        <font weight="400" style="italic">HKGrotesk-Italic.otf</font>
-        <font weight="500" style="normal">HKGrotesk-Medium.otf</font>
-        <font weight="500" style="italic">HKGrotesk-MediumItalic.otf</font>
-        <font weight="900" style="normal">HKGrotesk-Black.otf</font>
-        <font weight="900" style="italic">HKGrotesk-BlackItalic.otf</font>
-        <font weight="700" style="normal">HKGrotesk-Bold.otf</font>
-        <font weight="700" style="italic">HKGrotesk-BoldItalic.otf</font>
-    </family>
-    <alias name="hk-grotesk-medium" to="hk-grotesk" weight="500" />
-
-    <family customizationType="new-named-family" name="harmonyos-sans">
-        <font weight="100" style="normal">HarmonyOSSans-Thin.ttf</font>
-        <font weight="100" style="italic">HarmonyOSSans-ThinItalic.ttf</font>
-        <font weight="300" style="normal">HarmonyOSSans-Light.ttf</font>
-        <font weight="300" style="italic">HarmonyOSSans-LightItalic.ttf</font>
-        <font weight="400" style="normal">HarmonyOSSans-Regular.ttf</font>
-        <font weight="400" style="italic">HarmonyOSSans-Italic.ttf</font>
-        <font weight="500" style="normal">HarmonyOSSans-Medium.ttf</font>
-        <font weight="500" style="italic">HarmonyOSSans-MediumItalic.ttf</font>
-        <font weight="900" style="normal">HarmonyOSSans-Black.ttf</font>
-        <font weight="900" style="italic">HarmonyOSSans-BlackItalic.ttf</font>
-        <font weight="700" style="normal">HarmonyOSSans-Bold.ttf</font>
-        <font weight="700" style="italic">HarmonyOSSans-BoldItalic.ttf</font>
-    </family>
-    <alias name="harmonyos-sans-medium" to="harmonyos-sans" weight="500" />
-
-    <!--
-        Variable fonts
-    -->
-
     <family customizationType="new-named-family" name="manrope">
         <font weight="500" style="normal">Manrope-VF.ttf
             <axis tag="wght" stylevalue="500"/>

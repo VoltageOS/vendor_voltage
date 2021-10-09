@@ -21,36 +21,12 @@ LOCAL_PATH := vendor/proton/fonts
 PRODUCT_PACKAGES += \
     CutiveMono.ttf \
     DroidSansMono.ttf \
-    HarmonyOSSans-BlackItalic.ttf \
-    HarmonyOSSans-Black.ttf \
-    HarmonyOSSans-BoldItalic.ttf \
-    HarmonyOSSans-Bold.ttf \
-    HarmonyOSSans-Italic.ttf \
-    HarmonyOSSans-LightItalic.ttf \
-    HarmonyOSSans-Light.ttf \
-    HarmonyOSSans-MediumItalic.ttf \
-    HarmonyOSSans-Medium.ttf \
-    HarmonyOSSans-Regular.ttf \
-    HarmonyOSSans-ThinItalic.ttf \
-    HarmonyOSSans-Thin.ttf \
     Manrope-VF.ttf \
     NotoSans-Italic-VF.ttf \
     NotoSans-VF.ttf \
     Recursive-VF.ttf \
     RobotoFallback-VF.ttf \
     RobotoSystem-VF.ttf \
-    HKGrotesk-BlackItalic.otf \
-    HKGrotesk-Black.otf \
-    HKGrotesk-BoldItalic.otf \
-    HKGrotesk-Bold.otf \
-    HKGrotesk-Italic.otf \
-    HKGrotesk-LightItalic.otf \
-    HKGrotesk-Light.otf \
-    HKGrotesk-MediumItalic.otf \
-    HKGrotesk-Medium.otf \
-    HKGrotesk-Regular.otf \
-    HKGrotesk-ThinItalic.otf \
-    HKGrotesk-Thin.otf \
     Roboto-BlackItalic.ttf \
     Roboto-Black.ttf \
     Roboto-BoldItalic.ttf \

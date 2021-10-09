@@ -8,7 +8,6 @@ DEST_DIR = f"{os.path.dirname(os.path.realpath(__file__))}/overlays"
 
 # (user-facing name, font family name)
 FONTS = {
-    "HK Grotesk": "hk-grotesk",
     "Manrope": "manrope",
     "Noto Sans": "noto-sans",
     "Recursive Casual": "recursive-casual",
@@ -16,8 +15,6 @@ FONTS = {
     "Roboto": "roboto-system",
     "Source Sans": "source-sans",
     "Source Serif": "serif",
-    "HarmonyOS Sans": "harmonyos-sans",
-    "+Jakarta Sans": "plusjakarta-sans",
 }
 
 # Android.mk
