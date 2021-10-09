@@ -17,9 +17,9 @@ function replace_name() {
 replace_name "Roboto" "Roboto Fallback" RobotoFallback-*.ttx
 replace_name "Roboto" "Roboto System" RobotoSystem-*.ttx
 replace_name "Inter" "Roboto" Roboto-*.ttx
-replace_name "Inter" "Roboto" RobotoStatic-*.ttx
+replace_name "Inter" "RobotoStatic" RobotoStatic-*.ttx
 replace_name "Inter" "Google Sans" GoogleSans-*.ttx
-replace_name "Source Serif Pro" "Noto Serif" NotoSerif-*.ttx
+replace_name "Source Serif 4" "Noto Serif" NotoSerif-*.ttx
 replace_name "Fira Code" "Cutive Mono" CutiveMono.ttx
 replace_name "Fira Code" "Droid Sans Mono" DroidSansMono.ttx
 
