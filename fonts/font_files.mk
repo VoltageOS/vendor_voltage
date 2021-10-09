@@ -21,24 +21,14 @@ LOCAL_PATH := vendor/proton/fonts
 PRODUCT_PACKAGES += \
     CutiveMono.ttf \
     DroidSansMono.ttf \
+    Roboto-Regular.ttf \
     Manrope-VF.ttf \
     NotoSans-Italic-VF.ttf \
     NotoSans-VF.ttf \
     Recursive-VF.ttf \
     RobotoFallback-VF.ttf \
     RobotoSystem-VF.ttf \
-    Roboto-BlackItalic.ttf \
-    Roboto-Black.ttf \
-    Roboto-BoldItalic.ttf \
-    Roboto-Bold.ttf \
-    Roboto-Italic.ttf \
-    Roboto-LightItalic.ttf \
-    Roboto-Light.ttf \
-    Roboto-MediumItalic.ttf \
-    Roboto-Medium.ttf \
-    Roboto-Regular.ttf \
-    Roboto-ThinItalic.ttf \
-    Roboto-Thin.ttf \
+    RobotoStatic-Regular.ttf \
     SourceSans3-Italic-VF.otf \
     SourceSans3-VF.otf \
     NotoSerif-BoldItalic.ttf \
