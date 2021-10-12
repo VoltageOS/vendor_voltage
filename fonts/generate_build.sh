@@ -21,7 +21,7 @@ echo '# Copyright (C) 2021 The Proton AOSP Project
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_PATH := vendor/proton/fonts
+LOCAL_PATH := vendor/voltage/fonts
 
 # We have to use PRODUCT_PACKAGES (together with BUILD_PREBUILT) instead of
 # PRODUCT_COPY_FILES to install the font files, so that the NOTICE file can
@@ -89,4 +89,4 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/fonts_customization.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/fonts_customization.xml \
 
 # Include extra addon fonts
--include vendor/proton/fonts/extra/extra.mk' >> font_files.mk
+-include vendor/voltage/fonts/extra/extra.mk' >> font_files.mk

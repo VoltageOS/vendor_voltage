@@ -14,7 +14,7 @@
     limitations under the License.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.protonaosp.theme.font.source_sans">
+    package="org.voltage.theme.font.source_sans">
 
     <overlay android:targetPackage="android"
         android:category="android.theme.customization.font"
