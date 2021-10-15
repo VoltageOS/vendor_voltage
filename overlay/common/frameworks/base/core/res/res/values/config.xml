@@ -91,7 +91,7 @@
     <bool name="config_useRoundIcon">true</bool>
 
     <!-- Whether or not we should show the option to show battery percentage -->
-    <bool name="config_battery_percentage_setting_available">false</bool>
+    <bool name="config_battery_percentage_setting_available">true</bool>
 
     <!-- The package name for the default wellbeing app.
          This package must be trusted, as it has the permissions to control other applications
