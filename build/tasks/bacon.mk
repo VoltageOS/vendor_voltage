@@ -18,10 +18,10 @@
 
 VOLTAGE_TARGET_PACKAGE := $(PRODUCT_OUT)/voltage-$(VOLTAGE_VERSION).zip
 
-MD5 := prebuilts/build-tools/path/$(HOST_PREBUILT_TAG)/md5sum
+SHA256 := prebuilts/build-tools/path/$(HOST_PREBUILT_TAG)/sha256sum
 
 .PHONY: bacon
 bacon: $(INTERNAL_OTA_PACKAGE_TARGET)
 	$(hide) ln -f $(INTERNAL_OTA_PACKAGE_TARGET) $(VOLTAGE_TARGET_PACKAGE)
-	$(hide) $(MD5) $(VOLTAGE_TARGET_PACKAGE) | sed "s|$(PRODUCT_OUT)/||" > $(VOLTAGE_TARGET_PACKAGE).md5sum
+	$(hide) $(SHA256) $(VOLTAGE_TARGET_PACKAGE) | sed "s|$(PRODUCT_OUT)/||" > $(VOLTAGE_TARGET_PACKAGE).sha256sum
 	@echo "Package Complete: $(VOLTAGE_TARGET_PACKAGE)" >&2
