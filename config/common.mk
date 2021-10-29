@@ -117,7 +117,7 @@ DEVICE_PACKAGE_OVERLAYS += vendor/voltage/overlay/common
 include vendor/voltage/config/version.mk
 
 # BootAnimation
--include vendor/voltage/config/bootanimation.mk
+include vendor/voltage/config/bootanimation.mk
 
 # Fonts
 $(call inherit-product, vendor/voltage/fonts/fonts.mk)
