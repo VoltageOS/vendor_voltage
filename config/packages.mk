@@ -43,6 +43,10 @@ PRODUCT_PACKAGES += \
     ssh-keygen \
     start-ssh
 
+# turbo
+PRODUCT_PACKAGES += \
+    Turbo
+
 # rsync
 PRODUCT_PACKAGES += \
     rsync
