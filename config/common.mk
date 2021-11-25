@@ -120,6 +120,9 @@ PRODUCT_PACKAGES += \
     GrapheneOS-Camera
 endif
 
+# RRO
+include vendor/voltage/config/rro_overlays.mk
+
 # Versioning
 include vendor/voltage/config/version.mk
 
