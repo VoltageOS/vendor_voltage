@@ -30,4 +30,6 @@ PRODUCT_PACKAGES += \
 	IconPackRoundedSystemUIOverlay \
 	IconPackRoundedThemePickerOverlay \
 	IconPackOOSAndroidOverlay \
-	IconPackOOSSystemUIOverlay
+	IconPackOOSSystemUIOverlay \
+	IconPackAcherusAndroidOverlay \
+	IconPackAcherusSystemUIOverlay
