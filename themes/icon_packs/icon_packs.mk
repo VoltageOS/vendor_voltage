@@ -4,6 +4,11 @@ PRODUCT_PACKAGES += \
 	IconPackCircularSettingsOverlay \
 	IconPackCircularSystemUIOverlay \
 	IconPackCircularThemePickerOverlay \
+        IconPackPUIAndroidOverlay \
+        IconPackPUILauncherOverlay \
+        IconPackPUISettingsOverlay \
+        IconPackPUISystemUIOverlay \
+        IconPackPUIThemePickerOverlay \
 	IconPackVictorAndroidOverlay \
 	IconPackVictorLauncherOverlay \
 	IconPackVictorSettingsOverlay \
