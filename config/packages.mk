@@ -5,6 +5,11 @@ PRODUCT_PACKAGES += \
     ThemePicker \
     GamingMode
 
+ifeq ($(VOLTAGE_BUILD_TYPE), OFFICIAL)
+    PRODUCT_PACKAGES += \
+	Updater
+endif
+
 # Extra tools in Voltage
 PRODUCT_PACKAGES += \
     7z \
