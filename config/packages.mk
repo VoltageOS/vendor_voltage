@@ -2,7 +2,8 @@
 PRODUCT_PACKAGES += \
     Covers \
     Terminal \
-    ThemePicker
+    ThemePicker \
+    GamingMode
 
 # Extra tools in Voltage
 PRODUCT_PACKAGES += \
