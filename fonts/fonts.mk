@@ -29,6 +29,7 @@ PRODUCT_PACKAGES += \
     FontNotoSansOverlay \
     FontRecursiveCasualOverlay \
     FontRecursiveLinearOverlay \
+    FontRecursiveCursiveOverlay \
     FontRobotoOverlay \
     FontSourceSansOverlay \
     FontSourceSerifOverlay \

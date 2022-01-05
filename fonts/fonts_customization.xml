@@ -230,6 +230,82 @@
     </family>
     <alias name="recursive-casual-medium" to="recursive-casual" weight="500" />
 
+     <family customizationType="new-named-family" name="recursive-cursive">       
+        <font weight="400" style="normal">Recursive-VF.ttf            
+            <axis tag="CASL" stylevalue="1"/>            
+            <axis tag="slnt" stylevalue="0"/>            
+            <axis tag="wght" stylevalue="400"/>            
+            <axis tag="CRSV" stylevalue="1"/>        
+        </font>        
+        <font weight="400" style="italic">Recursive-VF.ttf            
+            <axis tag="CASL" stylevalue="1"/>            
+            <axis tag="slnt" stylevalue="-15"/>            
+            <axis tag="wght" stylevalue="400"/>            
+            <axis tag="CRSV" stylevalue="1"/>        
+        </font>        
+        <font weight="500" style="normal">Recursive-VF.ttf            
+            <axis tag="CASL" stylevalue="1"/>            
+            <axis tag="slnt" stylevalue="0"/>            
+            <axis tag="wght" stylevalue="500"/>            
+            <axis tag="CRSV" stylevalue="1"/>        
+        </font>        
+        <font weight="500" style="italic">Recursive-VF.ttf            
+            <axis tag="CASL" stylevalue="1"/>            
+            <axis tag="slnt" stylevalue="-15"/>            
+            <axis tag="wght" stylevalue="500"/>            
+            <axis tag="CRSV" stylevalue="1"/>        
+        </font>        
+        <font weight="600" style="normal">Recursive-VF.ttf            
+            <axis tag="CASL" stylevalue="1"/>            
+            <axis tag="slnt" stylevalue="0"/>            
+            <axis tag="wght" stylevalue="600"/>            
+            <axis tag="CRSV" stylevalue="1"/>        
+         </font>        
+         <font weight="600" style="italic">Recursive-VF.ttf            
+            <axis tag="CASL" stylevalue="1"/>            
+            <axis tag="slnt" stylevalue="-15"/>            
+            <axis tag="wght" stylevalue="600"/>            
+            <axis tag="CRSV" stylevalue="1"/>        
+         </font>        
+         <font weight="700" style="normal">Recursive-VF.ttf            
+            <axis tag="CASL" stylevalue="1"/>            
+            <axis tag="slnt" stylevalue="0"/>            
+            <axis tag="wght" stylevalue="700"/>            
+            <axis tag="CRSV" stylevalue="1"/>        
+         </font>        
+         <font weight="700" style="italic">Recursive-VF.ttf            
+            <axis tag="CASL" stylevalue="1"/>            
+            <axis tag="slnt" stylevalue="-15"/>            
+            <axis tag="wght" stylevalue="700"/>            
+            <axis tag="CRSV" stylevalue="1"/>        
+         </font>        
+         <font weight="800" style="normal">Recursive-VF.ttf            
+            <axis tag="CASL" stylevalue="1"/>            
+            <axis tag="slnt" stylevalue="0"/>            
+            <axis tag="wght" stylevalue="800"/>            
+            <axis tag="CRSV" stylevalue="1"/>        
+         </font>        
+         <font weight="800" style="italic">Recursive-VF.ttf            
+            <axis tag="CASL" stylevalue="1"/>            
+            <axis tag="slnt" stylevalue="-15"/>            
+            <axis tag="wght" stylevalue="800"/>            
+            <axis tag="CRSV" stylevalue="1"/>        
+         </font>        
+         <font weight="900" style="normal">Recursive-VF.ttf            
+            <axis tag="CASL" stylevalue="1"/>            
+3s            <axis tag="slnt" stylevalue="0"/>            
+            <axis tag="wght" stylevalue="900"/>            
+            <axis tag="CRSV" stylevalue="1"/>        
+         </font>        
+         <font weight="900" style="italic">Recursive-VF.ttf            
+            <axis tag="CASL" stylevalue="1"/>            
+            <axis tag="slnt" stylevalue="-15"/>            
+            <axis tag="wght" stylevalue="900"/>            
+            <axis tag="CRSV" stylevalue="1"/>       
+        </font>    
+    </family>    
+    <alias name="recursive-casual-medium" to="recursive-cursive" weight="500" />    
+
     <family customizationType="new-named-family" name="roboto-system">
         <font weight="400" style="normal">RobotoSystem-VF.ttf
             <axis tag="ital" stylevalue="0"/>
