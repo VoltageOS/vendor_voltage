@@ -89,6 +89,15 @@
         <item>udfps_icon_transparent</item>
    </string-array>
 
+   <string-array name="udfps_pressedicons">
+        <item>udfps_icon_pressed</item>
+        <item>udfps_icon_pressed_white</item>
+        <item>udfps_icon_pressed_white_new</item>
+        <item>udfps_icon_pressed_green</item>
+        <item>udfps_icon_pressed_yellow</item>
+        <item>udfps_icon_pressed_light_yellow</item>
+   </string-array>
+
     <string-array translatable="false" name="udfps_animation_styles">
         <item>aurora</item>
         <item>bloom</item>
