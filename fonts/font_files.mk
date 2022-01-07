@@ -21,6 +21,7 @@ LOCAL_PATH := vendor/voltage/fonts
 PRODUCT_PACKAGES += \
     CutiveMono.ttf \
     DroidSansMono.ttf \
+    Dosis-VF.ttf \
     Roboto-Regular.ttf \
     Manrope-VF.ttf \
     NotoSans-Italic-VF.ttf \
