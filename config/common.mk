@@ -124,6 +124,10 @@ PRODUCT_PACKAGES += \
     GrapheneOS-Camera
 endif
 
+# Themes
+PRODUCT_PACKAGES += \
+    AndroidBlackThemeOverlay \
+
 # RRO
 include vendor/voltage/config/rro_overlays.mk
 
