@@ -124,16 +124,6 @@ PRODUCT_PACKAGES += \
     GrapheneOS-Camera
 endif
 
-# Bromite
-PRODUCT_PACKAGES += \
-    bromite-webview
-
-TARGET_SHIP_BROMITE_BROWSER ?= false
-ifeq ($(strip $(TARGET_SHIP_BROMITE_BROWSER)),true)
-PRODUCT_PACKAGES += \
-    Bromite
-endif
-
 # RRO
 include vendor/voltage/config/rro_overlays.mk
 
