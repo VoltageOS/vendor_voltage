@@ -53,11 +53,10 @@ if [ -f $existingOTAjson ]; then
 	]
 }' >> $output
 
-        echo "JSON file data for OTA support:"
+        echo "JSON file for OTA generated successfully"
 else
 	#if not already supported, create dummy file with info in it on how to
 	echo 'There is no official support for this device yet' >> $output;
 fi
 
-cat $output
 echo ""
