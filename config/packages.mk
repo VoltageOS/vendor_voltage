@@ -10,6 +10,13 @@ ifeq ($(VOLTAGE_BUILD_TYPE), OFFICIAL)
 	Updater
 endif
 
+# VoltageOS UDFPS icon animations
+EXTRA_UDFPS_ANIMATIONS ?= false
+ifeq ($(EXTRA_UDFPS_ANIMATIONS),true)
+PRODUCT_PACKAGES += \
+    UdfpsResources
+endif
+
 # Extra tools in Voltage
 PRODUCT_PACKAGES += \
     7z \
