@@ -33,3 +33,12 @@ android_library {
     ],
     java_version: "1.7",
 }
+
+java_library {
+    name: "android-framework",
+    sdk_version: "core_platform",
+    static_libs: [
+        "framework",
+    ],
+    java_version: "1.7",
+}
