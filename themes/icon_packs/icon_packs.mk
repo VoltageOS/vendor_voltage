@@ -37,4 +37,7 @@ PRODUCT_PACKAGES += \
 	IconPackAcherusAndroidOverlay \
         IconPackAcherusSettingsOverlay \
 	IconPackAcherusSystemUIOverlay \
+        IconPackOutlineAndroidOverlay \
+        IconPackOutlineSettingsOverlay \
+        IconPackOutlineSystemUIOverlay \
 
