@@ -123,13 +123,14 @@
   <apn carrier="Orange FR-MMS" mcc="208" mnc="01" apn="orange.acte" proxy="" port="" user="orange" password="orange" server="*" mmsc="http://mms.orange.fr" mmsproxy="192.168.10.200" mmsport="8080" type="mms" />
   <apn carrier="Orange MMS" mcc="208" mnc="01" apn="Orange.acte" proxy="" port="" user="Orange" password="orange" mmsc="http://mms.orange.fr" mmsproxy="192.168.10.200" mmsport="8080" type="mms" />
   <apn carrier="Orange Internet" mcc="208" mnc="01" apn="ofnew.fr" proxy="192.168.10.100" port="8080" user="orange" password="orange" mmsc="" type="tethering" />
-  <apn carrier="Carrefour WAP" mcc="208" mnc="01" apn="ofnew.fr" proxy="192.168.10.100" port="8080" mmsc="" user="orange" password="orange" spn="Carrefour" type="default,supl" />
-  <apn carrier="Carrefour MMS" mcc="208" mnc="01" apn="orange.acte" proxy="" port="" mmsproxy="192.168.10.200" mmsport="8080" mmsc="http://mms.orange.fr" user="orange" password="orange" spn="Carrefour" type="mms" />
-  <apn carrier="NRJ WAP" mcc="208" mnc="01" apn="ofnew.fr" proxy="192.168.10.100" port="8080" mmsc="" user="orange" password="orange" spn="NRJ (ORANGE)" type="default,supl" />
-  <apn carrier="NRJ MMS" mcc="208" mnc="01" apn="orange.acte" proxy="" port="" mmsproxy="192.168.10.200" mmsport="8080" mmsc="http://mms.orange.fr" user="orange" password="orange" spn="NRJ (ORANGE)" type="mms" />
-  <apn carrier="Tele2 WAP" mcc="208" mnc="01" apn="ofnew.fr" proxy="192.168.10.100" port="8080" user="orange" password="orange" spn="Tele 2" type="default,supl" />
-  <apn carrier="Tele2 MMS" mcc="208" mnc="01" apn="orange.acte" proxy="" port="" mmsproxy="192.168.10.200" mmsport="8080" mmsc="http://mms.orange.fr" user="orange" password="orange" spn="Tele 2" type="mms" />
-  <apn carrier="Virgin Mobile" mcc="208" mnc="01" apn="ofnew.fr" proxy="192.168.10.100" port="8080" user="orange" password="orange" spn="Virgin" type="default,supl" />
+  <apn carrier="Orange IA" mcc="208" mnc="01" apn="" protocol="IPV6" type="ia" user_editable="false" user_visible="false" />
+  <apn carrier="Carrefour WAP" mcc="208" mnc="01" apn="ofnew.fr" proxy="192.168.10.100" port="8080" mmsc="" user="orange" password="orange" type="default,supl" />
+  <apn carrier="Carrefour MMS" mcc="208" mnc="01" apn="orange.acte" proxy="" port="" mmsproxy="192.168.10.200" mmsport="8080" mmsc="http://mms.orange.fr" user="orange" password="orange" type="mms" />
+  <apn carrier="NRJ WAP" mcc="208" mnc="01" apn="ofnew.fr" proxy="192.168.10.100" port="8080" mmsc="" user="orange" password="orange" type="default,supl" />
+  <apn carrier="NRJ MMS" mcc="208" mnc="01" apn="orange.acte" proxy="" port="" mmsproxy="192.168.10.200" mmsport="8080" mmsc="http://mms.orange.fr" user="orange" password="orange" type="mms" />
+  <apn carrier="Tele2 WAP" mcc="208" mnc="01" apn="ofnew.fr" proxy="192.168.10.100" port="8080" user="orange" password="orange" type="default,supl" />
+  <apn carrier="Tele2 MMS" mcc="208" mnc="01" apn="orange.acte" proxy="" port="" mmsproxy="192.168.10.200" mmsport="8080" mmsc="http://mms.orange.fr" user="orange" password="orange" type="mms" />
+  <apn carrier="Virgin Mobile" mcc="208" mnc="01" apn="ofnew.fr" proxy="192.168.10.100" port="8080" user="orange" password="orange" type="default,supl" />
   <apn carrier="Virgin" mcc="208" mnc="01" apn="ofnew.fr" proxy="" port="" user="orange" password="orange" mmsc="" mvno_type="spn" mvno_match_data="Virgin" authtype="1" type="default,supl" />
   <apn carrier="Virgin Mobile MMS" mcc="208" mnc="01" apn="orange.acte" proxy="" port="" mmsproxy="192.168.10.200" mmsport="8080" mmsc="http://mms.orange.fr" user="orange" password="orange" spn="Virgin" type="mms" />
   <apn carrier="Internet Entreprise" mcc="208" mnc="01" apn="internet-entreprise" proxy="" port="" user="orange" password="orange" mmsc="" type="tethering" />
