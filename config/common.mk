@@ -57,10 +57,6 @@ $(foreach f,$(wildcard vendor/voltage/prebuilt/common/etc/init/*.rc),\
 PRODUCT_COPY_FILES += \
     vendor/voltage/config/permissions/android.software.nfc.beam.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.software.nfc.beam.xml
 
-# Privapp permissions
-PRODUCT_COPY_FILES += \
-    vendor/voltage/config/permissions/privapp-permissions-custom.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-custom.xml
-
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.software.sip.voip.xml
@@ -124,24 +120,6 @@ PRODUCT_PACKAGES += \
     GrapheneOS-Camera
 endif
 
-# Face Unlock
-TARGET_FACE_UNLOCK_SUPPORTED ?= true
-ifeq ($(TARGET_FACE_UNLOCK_SUPPORTED),true)
-PRODUCT_PACKAGES += \
-    FaceUnlockService
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.face_unlock_service.enabled=$(TARGET_FACE_UNLOCK_SUPPORTED)
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.biometrics.face.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.biometrics.face.xml
-endif
-
-# Themes
-PRODUCT_PACKAGES += \
-    AndroidBlackThemeOverlay \
-
-# RRO
-include vendor/voltage/config/rro_overlays.mk
-
 # Versioning
 include vendor/voltage/config/version.mk
 
@@ -153,9 +131,6 @@ $(call inherit-product, vendor/voltage/fonts/fonts.mk)
 
 # Audio
 $(call inherit-product, vendor/voltage/audio/audio.mk)
-
-# # Icon packs
-$(call inherit-product, vendor/voltage/themes/icon_packs/icon_packs.mk)
 
 # Include extra packages
 include vendor/voltage/config/packages.mk
