@@ -35,3 +35,4 @@ PRODUCT_PACKAGES += \
     FontSourceSerifOverlay \
     FontHarmonyOSSansOverlay \
     FontOppoSansOverlay \
+    FontLinotteOverlay \
