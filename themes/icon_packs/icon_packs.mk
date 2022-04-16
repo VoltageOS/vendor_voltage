@@ -40,4 +40,7 @@ PRODUCT_PACKAGES += \
         IconPackOutlineAndroidOverlay \
         IconPackOutlineSettingsOverlay \
         IconPackOutlineSystemUIOverlay \
+        IconPackDoraAndroidOverlay \
+        IconPackDoraSettingsOverlay \
+        IconPackDoraSystemUIOverlay
 
