@@ -30,7 +30,7 @@ import urllib.parse
 import urllib.request
 
 custom_local_manifest = ".repo/local_manifests/voltage.xml"
-custom_default_revision = "12"
+custom_default_revision = "12l"
 custom_dependencies = "voltage.dependencies"
 org_manifest = "VoltageOS-Devices"  # leave empty if org is provided in manifest
 org_display = "VoltageOS-Devices"  # needed for displaying
