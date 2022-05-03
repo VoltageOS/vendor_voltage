@@ -2,6 +2,8 @@
 PRODUCT_PACKAGES += \
     Covers \
     Terminal \
+    Eleven \
+    Etar \
     ThemePicker \
     GamingMode
 
