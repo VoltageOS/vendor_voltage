@@ -25,7 +25,7 @@ if [ -f $existingOTAjson ]; then
 	device=`grep -n "\"device\"" $existingOTAjson | cut -d ":" -f 3 | sed 's/"//g' | sed 's/,//g' | xargs`
 	filename=$3
 	version=`echo "$3" | cut -d'-' -f2`
-	download="https://sourceforge.net/projects/voltage-os/files/'$device'/'$filename'/download"
+	download="https://sourceforge.net/projects/voltage-os/files/$1/$filename/download"
 	buildprop=$2/system/build.prop
 	linenr=`grep -n "ro.system.build.date.utc" $buildprop | cut -d':' -f1`
 	timestamp=`sed -n $linenr'p' < $buildprop | cut -d'=' -f2`
@@ -38,19 +38,19 @@ if [ -f $existingOTAjson ]; then
 	fi
 
 	echo '{
-	"response": [
-		{
-			"maintainer": "'$maintainer'",
-			"oem": "'$oem'",
-			"device": "'$device'",
-			"filename": "'$filename'",
-			"download": "'download'",
-			"timestamp": '$timestamp',
-			"md5": "'$md5'",
-			"size": '$size',
-			"version": "'$version'",
-		}
-	]
+  "response": [
+    {
+        "maintainer": "'$maintainer'",
+        "oem": "'$oem'",
+        "device": "'$device'",
+        "filename": "'$filename'",
+        "download": "'$download'",
+        "timestamp": '$timestamp',
+        "md5": "'$md5'",
+        "size": '$size',
+        "version": "'$version'"
+    }
+  ]
 }' >> $output
 
         echo "vendor/ota/$1.json"
