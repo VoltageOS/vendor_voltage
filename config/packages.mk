@@ -5,6 +5,7 @@ PRODUCT_PACKAGES += \
     Eleven \
     Etar \
     ThemePicker \
+    OmniJaws \
     GamingMode
 
 ifeq ($(VOLTAGE_BUILD_TYPE), OFFICIAL)
