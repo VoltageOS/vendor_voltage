@@ -3,7 +3,7 @@
     <string-array name="themes" />
 
     <!-- Color section -->
-    <array name="color_bundles">
+    <array name="color_bundles" translatable="false">
         <item>default</item>
         <item>bundle1</item>
         <item>bundle2</item>
