@@ -13,6 +13,12 @@ ifeq ($(VOLTAGE_BUILD_TYPE), OFFICIAL)
 	Updater
 endif
 
+# Smartcookieweb
+ifeq ($(SMARTCOOKIEWEB),true)
+     PRODUCT_PACKAGES += \
+         SmartCookieWeb
+endif
+
 # VoltageOS UDFPS icon animations
 EXTRA_UDFPS_ANIMATIONS ?= false
 ifeq ($(EXTRA_UDFPS_ANIMATIONS),true)
