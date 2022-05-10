@@ -112,17 +112,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI
 
+
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/voltage/config/partner_gms.mk
 
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/voltage/overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/voltage/overlay/common
-
-TARGET_BUILD_GRAPHENEOS_CAMERA ?= true
-ifeq ($(strip $(TARGET_BUILD_GRAPHENEOS_CAMERA)),true)
-PRODUCT_PACKAGES += \
-    GrapheneOS-Camera
-endif
 
 # Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED ?= true
