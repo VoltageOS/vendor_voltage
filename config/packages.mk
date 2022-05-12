@@ -6,6 +6,7 @@ PRODUCT_PACKAGES += \
     Etar \
     ThemePicker \
     OmniJaws \
+    WeatherIcons \
     GamingMode
 
 ifeq ($(VOLTAGE_BUILD_TYPE), OFFICIAL)
