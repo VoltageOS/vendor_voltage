@@ -7,7 +7,7 @@ PRODUCT_PACKAGES += \
     ThemePicker \
     OmniJaws \
     WeatherIcons \
-    GamingMode
+    GameSpace
 
 ifeq ($(VOLTAGE_BUILD_TYPE), OFFICIAL)
     PRODUCT_PACKAGES += \
