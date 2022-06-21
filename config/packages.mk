@@ -7,7 +7,6 @@ PRODUCT_PACKAGES += \
     ThemePicker \
     OmniJaws \
     WeatherIcons \
-    Apps \
     VoltageThemesStub \
     GameSpace
 
@@ -20,6 +19,12 @@ endif
 ifeq ($(SMARTCOOKIEWEB),true)
      PRODUCT_PACKAGES += \
          SmartCookieWeb
+endif
+
+# Graphene Apps
+ifeq ($(GrapheneApps),true)
+     PRODUCT_PACKAGES += \
+         Apps
 endif
 
 # VoltageOS UDFPS icon animations
