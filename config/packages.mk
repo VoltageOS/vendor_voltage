@@ -16,7 +16,8 @@ ifeq ($(VOLTAGE_BUILD_TYPE), OFFICIAL)
 endif
 
 # Smartcookieweb
-ifeq ($(SMARTCOOKIEWEB),true)
+SMARTCOOKIEWEB ?= true
+ifeq ($(strip $(SMARTCOOKIEWEB)),true)
      PRODUCT_PACKAGES += \
          SmartCookieWeb
 endif
