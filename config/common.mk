@@ -119,6 +119,12 @@ PRODUCT_PACKAGES += \
     charger_res_images \
     product_charger_res_images
 
+# Filesystems tools
+PRODUCT_PACKAGES += \
+    fsck.ntfs \
+    mkfs.ntfs \
+    mount.ntfs
+
 # Storage manager
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.storage_manager.enabled=true
