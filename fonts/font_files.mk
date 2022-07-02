@@ -19,13 +19,14 @@ LOCAL_PATH := vendor/voltage/fonts
 # get installed too.
 
 PRODUCT_PACKAGES += \
+    Dosis-VF.ttf \
     CutiveMono.ttf \
     DroidSansMono.ttf \
-    Dosis-VF.ttf \
     Roboto-Regular.ttf \
     Manrope-VF.ttf \
     NotoSans-Italic-VF.ttf \
     NotoSans-VF.ttf \
+    OppoSans-En-Regular.ttf \
     Recursive-VF.ttf \
     RobotoFallback-VF.ttf \
     RobotoSystem-VF.ttf \
