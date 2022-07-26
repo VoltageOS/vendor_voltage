@@ -8,7 +8,9 @@ PRODUCT_PACKAGES += \
     OmniJaws \
     WeatherIcons \
     VoltageThemesStub \
-    GameSpace
+    GameSpace \
+    SetupWizard \
+    Seedvault
 
 ifeq ($(VOLTAGE_BUILD_TYPE), OFFICIAL)
     PRODUCT_PACKAGES += \
