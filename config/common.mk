@@ -5,6 +5,20 @@ PRODUCT_BRAND ?= VoltageOS
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    dalvik.vm.debug.alloc=0 \
+    keyguard.no_require_sim=true \
+    media.recorder.show_manufacturer_and_model=true \
+    net.tethering.noprovisioning=true \
+    persist.sys.disable_rescue=true \
+    ro.carrier=unknown \
+    ro.com.android.dataroaming=false \
+    ro.opa.eligible_device=true \
+    ro.setupwizard.enterprise_mode=1 \
+    ro.storage_manager.enabled=true \
+    ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
+    ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html \
+
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.com.google.clientidbase=android-google
