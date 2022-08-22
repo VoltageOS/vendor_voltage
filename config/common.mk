@@ -149,6 +149,9 @@ endif
 PRODUCT_PACKAGES += \
     AndroidBlackThemeOverlay \
 
+# RRO
+include vendor/voltage/config/rro_overlays.mk
+
 # Versioning
 include vendor/voltage/config/version.mk
 
