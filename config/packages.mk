@@ -9,6 +9,8 @@ PRODUCT_PACKAGES += \
     WeatherIcons \
     VoltageThemesStub \
     GameSpace \
+    SetupWizard \
+    Seedvault
 
 ifeq ($(VOLTAGE_BUILD_TYPE), OFFICIAL)
 #    PRODUCT_PACKAGES += \
