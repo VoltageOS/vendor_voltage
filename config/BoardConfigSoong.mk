@@ -32,7 +32,6 @@ SOONG_CONFIG_voltageGlobalVars += \
     bootloader_message_offset \
     disable_postrender_cleanup \
     needs_camera_boottime \
-    needs_netd_direct_connect_rule \
     target_alternative_futex_waiters \
     target_init_vendor_lib \
     target_ld_shim_libs \
@@ -57,7 +56,6 @@ endif
 # Soong bool variables
 SOONG_CONFIG_voltageGlobalVars_disable_postrender_cleanup := $(TARGET_DISABLE_POSTRENDER_CLEANUP)
 SOONG_CONFIG_voltageGlobalVars_needs_camera_boottime := $(TARGET_CAMERA_BOOTTIME_TIMESTAMP)
-SOONG_CONFIG_voltageGlobalVars_needs_netd_direct_connect_rule := $(TARGET_NEEDS_NETD_DIRECT_CONNECT_RULE)
 SOONG_CONFIG_voltageGlobalVars_target_alternative_futex_waiters := $(TARGET_ALTERNATIVE_FUTEX_WAITERS)
 SOONG_CONFIG_voltageNvidiaVars_uses_nv_enhancements := $(NV_ANDROID_FRAMEWORK_ENHANCEMENTS)
 SOONG_CONFIG_voltageQcomVars_supports_extended_compress_format := $(AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT)
