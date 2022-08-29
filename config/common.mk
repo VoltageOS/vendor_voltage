@@ -102,6 +102,9 @@ PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 # Disable vendor restrictions
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
+# Require all requested packages to exist
+$(call enforce-product-packages-exist-internal,$(wildcard device/*/$(VOLTAGE_BUILD)/$(TARGET_PRODUCT).mk),)
+
 # Config
 PRODUCT_PACKAGES += \
     SimpleDeviceConfig
