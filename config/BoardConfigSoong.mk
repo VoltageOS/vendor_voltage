@@ -50,8 +50,7 @@ SOONG_CONFIG_voltageNvidiaVars += \
 SOONG_CONFIG_NAMESPACES += voltageQcomVars
 SOONG_CONFIG_voltageQcomVars += \
     supports_extended_compress_format \
-    uses_pre_uplink_features_netmgrd \
-    uses_qcom_bsp_legacy
+    uses_pre_uplink_features_netmgrd
 
 # Only create display_headers_namespace var if dealing with UM platforms to avoid breaking build for all other platforms
 ifneq ($(filter $(UM_PLATFORMS),$(TARGET_BOARD_PLATFORM)),)
@@ -70,7 +69,6 @@ SOONG_CONFIG_voltageGlobalVars_target_alternative_futex_waiters := $(TARGET_ALTE
 SOONG_CONFIG_voltageNvidiaVars_uses_nv_enhancements := $(NV_ANDROID_FRAMEWORK_ENHANCEMENTS)
 SOONG_CONFIG_voltageQcomVars_supports_extended_compress_format := $(AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT)
 SOONG_CONFIG_voltageQcomVars_uses_pre_uplink_features_netmgrd := $(TARGET_USES_PRE_UPLINK_FEATURES_NETMGRD)
-SOONG_CONFIG_voltageQcomVars_uses_qcom_bsp_legacy := $(TARGET_USES_QCOM_BSP_LEGACY)
 
 # Set default values
 BOOTLOADER_MESSAGE_OFFSET ?= 0
