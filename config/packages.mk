@@ -13,8 +13,8 @@ PRODUCT_PACKAGES += \
     Seedvault
 
 ifeq ($(VOLTAGE_BUILD_TYPE), OFFICIAL)
-#    PRODUCT_PACKAGES += \
-#	Updater
+    PRODUCT_PACKAGES += \
+	Updater
 endif
 
 # Smartcookieweb
