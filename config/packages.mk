@@ -5,6 +5,7 @@ PRODUCT_PACKAGES += \
     Etar \
     ThemePicker \
     ThemesStub \
+    BatteryStatsViewer \
     GameSpace \
     OmniJaws \
     WeatherIcons \
