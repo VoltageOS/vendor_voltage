@@ -30,14 +30,14 @@ import urllib.parse
 import urllib.request
 
 custom_local_manifest = ".repo/local_manifests/voltage.xml"
-custom_default_revision = "12l"
+custom_default_revision = "13"
 custom_dependencies = "voltage.dependencies"
 org_manifest = "VoltageOS-Devices"  # leave empty if org is provided in manifest
 org_display = "VoltageOS-Devices"  # needed for displaying
 
 default_manifest = ".repo/manifests/default.xml"
 voltage_manifest = ".repo/manifests/snippets/voltage.xml"
-lineage_manifest = ".repo/manifests/snippets/lineage.xml"
+lineage_manifest = ".repo/manifests/snippets/external.xml"
 
 github_token = None
 
