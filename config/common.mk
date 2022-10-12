@@ -136,6 +136,17 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
     Eleven \
     SystemUI
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    pm.dexopt.boot=verify \
+    pm.dexopt.first-boot=quicken \
+    pm.dexopt.install=speed-profile \
+    pm.dexopt.bg-dexopt=everything
+
+ifneq ($(AB_OTA_PARTITIONS),)
+PRODUCT_PROPERTY_OVERRIDES += \
+    pm.dexopt.ab-ota=quicken
+endif
+
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/voltage/config/partner_gms.mk
 
