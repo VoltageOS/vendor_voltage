@@ -126,10 +126,15 @@ PRODUCT_PACKAGES_DEBUG += \
 PRODUCT_PACKAGES += \
     adb_root
 
-# Dex preopt
+# Dex/ART optimization
 PRODUCT_DEXPREOPT_SPEED_APPS += \
+    Settings \
+    Dialer \
+    Contacts \
+    DeskClock \
+    messaging \
+    Eleven \
     SystemUI
-
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/voltage/config/partner_gms.mk
