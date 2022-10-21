@@ -9,6 +9,7 @@ PRODUCT_PACKAGES += \
     WeatherIcons \
     VoltageThemesStub \
     GameSpace \
+    ParallelSpacePrebuilt \
     SetupWizard \
     Seedvault
 
