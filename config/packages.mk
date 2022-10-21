@@ -18,6 +18,10 @@ ifeq ($(VOLTAGE_BUILD_TYPE), OFFICIAL)
 	Updater
 endif
 
+# Combined icons
+PRODUCT_PACKAGES += \
+    CombinedIconsOverlay
+
 # Smartcookieweb
 SMARTCOOKIEWEB ?= true
 ifeq ($(strip $(SMARTCOOKIEWEB)),true)
