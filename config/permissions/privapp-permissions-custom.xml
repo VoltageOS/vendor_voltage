@@ -10,4 +10,10 @@
         <permission name="lineageos.permission.MANAGE_LIVEDISPLAY" />
         <permission name="android.permission.MANAGE_APP_LOCK" />
     </privapp-permissions>
+
+    <privapp-permissions package="ink.kscope.parallelspace">
+        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+        <permission name="android.permission.MANAGE_PARALLEL_SPACES" />
+    </privapp-permissions>
+
 </permissions>
