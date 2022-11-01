@@ -105,11 +105,11 @@
         <item>udfps_icon_spiderman</item>
         <item>udfps_icon_spiral_blue</item>
         <item>udfps_icon_sun_metro</item>
+        <item>udfps_icon_genshin_fire</item>
         <item>udfps_icon_transparent</item>
    </string-array>
 
     <string-array translatable="false" name="udfps_animation_styles">
-        <item>aurora</item>
         <item>bloom</item>
         <item>cyber</item>
         <item>electronic</item>
@@ -132,7 +132,6 @@
         <item>udfps_miui_pulse_recognizing_white_anim</item>
         <item>udfps_miui_rhythm_recognizing_anim</item>
         <item>udfps_miui_star_cas_recognizing_anim</item>
-        <item>udfps_op_cosmos_recognizing_anim</item>
         <item>udfps_op_energy_recognizing_anim</item>
         <item>udfps_op_mclaren_recognizing_anim</item>
         <item>udfps_op_ripple_recognizing_anim</item>
@@ -146,10 +145,13 @@
         <item>udfps_rog_fusion_recognizing_anim</item>
         <item>udfps_rog_pulsar_recognizing_anim</item>
         <item>udfps_rog_supernova_recognizing_anim</item>
+        <item>udfps_genshin_fire_recognizing_anim</item>
+        <item>udfps_bubble_recognizing_anim</item>
+        <item>udfps_stardust_recognizing_anim</item>
+        <item>udfps_swirl_recognizing_anim</item>
     </string-array>
 
     <string-array translatable="false" name="udfps_animation_previews">
-        <item>aurora_anim_21</item>
         <item>bloom_anim_14</item>
         <item>cyber_anim_9</item>
         <item>electronic_anim_7</item>
@@ -172,7 +174,6 @@
         <item>gxzw_pulse_recognizing_anim_white_18</item>
         <item>gxzw_rhythm_recognizing_anim_15</item>
         <item>gxzw_star_cas_recognizing_anim_30</item>
-        <item>udfps_op_cosmos_anim_60</item>
         <item>udfps_op_energy_anim_35</item>
         <item>udfps_op_mclaren_anim_45</item>
         <item>udfps_op_ripple_anim_30</item>
@@ -186,10 +187,13 @@
         <item>asus_udfps_anim_1_10</item>
         <item>asus_udfps_anim_2_35</item>
         <item>asus_udfps_anim_3_25</item>
+        <item>udfps_genshin_fire_recognizing_anim_22</item>
+        <item>udfps_bubble_recognizing_anim_19</item>
+        <item>udfps_stardust_recognizing_anim_19</item>
+        <item>udfps_swirl_recognizing_anim_19</item>
     </string-array>
 
     <string-array translatable="false" name="udfps_animation_titles">
-        <item>Aurora</item>
         <item>Bloom</item>
         <item>Cyber</item>
         <item>Electronic</item>
@@ -212,7 +216,6 @@
         <item>Pulse (White)</item>
         <item>Rhythm</item>
         <item>Starlight</item>
-        <item>Cosmos</item>
         <item>Energy</item>
         <item>McLaren</item>
         <item>Ripple</item>
@@ -226,6 +229,10 @@
         <item>Fusion</item>
         <item>Pulsar</item>
         <item>Supernova</item>
+        <item>Genshin fire</item>
+        <item>Bubble</item>
+        <item>Stardust</item>
+        <item>Swirl</item>
     </string-array>
 
 </resources>
