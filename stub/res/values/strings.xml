@@ -2,36 +2,40 @@
 <resources>
     <string name="app_name">Voltage Themes</string>
 
-    <string name="bundle1_color_name">Carbon</string>
-    <string name="bundle2_color_name">Paper</string>
-    <string name="bundle3_color_name">Sun</string>
-    <string name="bundle_name_bundle1">@string/bundle1_color_name</string>
-    <string name="bundle_name_bundle2">@string/bundle2_color_name</string>
-    <string name="bundle_name_bundle3">@string/bundle3_color_name</string>
+    <!-- Side A colors -->
+    <string name="default_color_name">@*android:string/system_locale_title</string>
     <string name="bundle_name_default">@string/default_color_name</string>
-    <string name="bundle_name_fruits1">@string/default_color_name</string>
-    <string name="bundle_name_fruits2">@string/default_color_name</string>
-    <string name="bundle_name_fruits3">@string/default_color_name</string>
-    <string name="bundle_name_fruits4">@string/default_color_name</string>
-    <string name="bundle_name_fruits5">@string/default_color_name</string>
-    <string name="bundle_name_rainbow1">@string/default_color_name</string>
-    <string name="bundle_name_rainbow2">@string/default_color_name</string>
-    <string name="bundle_name_rainbow3">@string/default_color_name</string>
-    <string name="bundle_name_rainbow4">@string/default_color_name</string>
-    <string name="bundle_name_rainbow5">@string/default_color_name</string>
-    <string name="bundle_name_rainbow6">@string/default_color_name</string>
-    <string name="bundle_name_rainbow7">@string/default_color_name</string>
-    <string name="color_style_fruits1">FRUIT_SALAD</string>
-    <string name="color_style_fruits2">FRUIT_SALAD</string>
-    <string name="color_style_fruits3">FRUIT_SALAD</string>
-    <string name="color_style_fruits4">FRUIT_SALAD</string>
-    <string name="color_style_fruits5">FRUIT_SALAD</string>
-    <string name="color_style_rainbow1">RAINBOW</string>
-    <string name="color_style_rainbow2">RAINBOW</string>
-    <string name="color_style_rainbow3">RAINBOW</string>
-    <string name="color_style_rainbow4">RAINBOW</string>
-    <string name="color_style_rainbow5">RAINBOW</string>
-    <string name="color_style_rainbow6">RAINBOW</string>
-    <string name="color_style_rainbow7">RAINBOW</string>
-    <string name="default_color_name">Classic</string>
+    <string name="almared_color_name">Almacen Red</string>
+    <string name="bundle_name_almared">@string/almared_color_name</string>
+    <string name="pipkinpink_color_name">Pipkin Pink</string>
+    <string name="bundle_name_pipkinpink">@string/pipkinpink_color_name</string>
+    <string name="quetzalgold_color_name">Quetzal Gold</string>
+    <string name="bundle_name_quetzalgold">@string/quetzalgold_color_name</string>
+    <!-- BTLG Old Accents (monochrome) -->
+    <string name="movemint_color_name">Move Mint</string>
+    <string name="bundle_name_movemint">@string/movemint_color_name</string>
+    <string name="holillusion_color_name">Holillusion</string>
+    <string name="bundle_name_holillusion">@string/holillusion_color_name</string>
+    <string name="maniamber_color_name">Mania Amber</string>
+    <string name="bundle_name_maniamber">@string/maniamber_color_name</string>
+    <string name="meltedbrainred_color_name">Melted Brain Red</string>
+    <string name="bundle_name_meltedbrainred">@string/meltedbrainred_color_name</string>
+    <!-- BTLG Old Accents (with secondary) -->
+    <string name="dimigopink_color_name">DIMIGO Pink</string>
+    <string name="bundle_name_dimigopink">@string/dimigopink_color_name</string>
+    <string name="spookedpurple_color_name">Spooked Purple</string>
+    <string name="bundle_name_spookedpurple">@string/spookedpurple_color_name</string>
+    <string name="pacleggerswarmth_color_name">PACLeggers Warmth</string>
+    <string name="bundle_name_pacleggerswarmth">@string/pacleggerswarmth_color_name</string>
+    <string name="nexoduscold_color_name">Nexodus Cold</string>
+    <string name="bundle_name_nexoduscold">@string/nexoduscold_color_name</string>
+    <!-- Quetzal Palettes -->
+    <string name="quetzal1_color_name">Quetzal I</string>
+    <string name="bundle_name_quetzal1">@string/quetzal1_color_name</string>
+    <string name="quetzal2_color_name">Quetzal II</string>
+    <string name="bundle_name_quetzal2">@string/quetzal2_color_name</string>
+    <string name="quetzal3_color_name">Quetzal III</string>
+    <string name="bundle_name_quetzal3">@string/quetzal3_color_name</string>
+    <string name="quetzal4_color_name">Quetzal IV</string>
+    <string name="bundle_name_quetzal4">@string/quetzal4_color_name</string>
 </resources>

@@ -3,22 +3,22 @@
     <string-array name="themes" />
 
     <!-- Color section -->
-    <string-array name="color_bundles">
+    <array name="color_bundles" translatable="false">
         <item>default</item>
-        <item>bundle1</item>
-        <item>bundle2</item>
-        <item>bundle3</item>
-        <item>rainbow1</item>
-        <item>rainbow2</item>
-        <item>rainbow3</item>
-        <item>rainbow4</item>
-        <item>rainbow5</item>
-        <item>rainbow6</item>
-        <item>rainbow7</item>
-        <item>fruits1</item>
-        <item>fruits2</item>
-        <item>fruits3</item>
-        <item>fruits4</item>
-        <item>fruits5</item>
-    </string-array>
+        <item>almared</item>
+        <item>pipkinpink</item>
+        <item>quetzalgold</item>
+        <item>movemint</item>
+        <item>holillusion</item>
+        <item>maniamber</item>
+        <item>meltedbrainred</item>
+        <item>dimigopink</item>
+        <item>spookedpurple</item>
+        <item>pacleggerswarmth</item>
+        <item>nexoduscold</item>
+        <item>quetzal1</item>
+        <item>quetzal2</item>
+        <item>quetzal3</item>
+        <item>quetzal4</item>
+    </array>
 </resources>

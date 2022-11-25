@@ -1,36 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Color section -->
-    <color name="color_primary_bundle1">#ff0a8758</color>
-    <color name="color_primary_bundle2">#ff746bc1</color>
-    <color name="color_primary_bundle3">#ffa66800</color>
-    <color name="color_primary_default">#ff063970</color>
-    <color name="color_primary_fruits1">#ffffeeb2</color>
-    <color name="color_primary_fruits2">#ffccee99</color>
-    <color name="color_primary_fruits3">#ffb1ebff</color>
-    <color name="color_primary_fruits4">#ffebdcff</color>
-    <color name="color_primary_fruits5">#ffffd8eb</color>
-    <color name="color_primary_rainbow1">#ffffb2b5</color>
-    <color name="color_primary_rainbow2">#ffffb868</color>
-    <color name="color_primary_rainbow3">#ffe9c44a</color>
-    <color name="color_primary_rainbow4">#ffbaf293</color>
-    <color name="color_primary_rainbow5">#ff96cbff</color>
-    <color name="color_primary_rainbow6">#ffcbbfff</color>
-    <color name="color_primary_rainbow7">#fff5acfb</color>
-    <color name="color_secondary_bundle1">#0a8758</color>
-    <color name="color_secondary_bundle2">#746bc1</color>
-    <color name="color_secondary_bundle3">#a66800</color>
-    <color name="color_secondary_default">#1a73e8</color>
-    <color name="color_secondary_fruits1">#ffffeeb2</color>
-    <color name="color_secondary_fruits2">#ffccee99</color>
-    <color name="color_secondary_fruits3">#ffb1ebff</color>
-    <color name="color_secondary_fruits4">#ffebdcff</color>
-    <color name="color_secondary_fruits5">#ffffd8eb</color>
-    <color name="color_secondary_rainbow1">#ffffb2b5</color>
-    <color name="color_secondary_rainbow2">#ffffb868</color>
-    <color name="color_secondary_rainbow3">#ffe9c44a</color>
-    <color name="color_secondary_rainbow4">#ffbaf293</color>
-    <color name="color_secondary_rainbow5">#ff96cbff</color>
-    <color name="color_secondary_rainbow6">#ffcbbfff</color>
-    <color name="color_secondary_rainbow7">#fff5acfb</color>
+    <!-- Side A colors -->
+    <color name="color_primary_default">#ffffffff</color>
+    <color name="color_secondary_default">#ffffffff</color>
+    <color name="color_primary_almared">#ffa3302d</color>
+    <color name="color_secondary_almared">#ffa3302d</color>
+    <color name="color_primary_pipkinpink">#ffd86a82</color>
+    <color name="color_secondary_pipkinpink">#ffd86a82</color>
+    <color name="color_primary_quetzalgold">#ffDCAE4B</color>
+    <color name="color_secondary_quetzalgold">#ffDCAE4B</color>
+    <!-- BTLG Old Accents (monochrome) -->
+    <color name="color_primary_movemint">#ff46ff99</color>
+    <color name="color_secondary_movemint">#ff46ff99</color>
+    <color name="color_primary_holillusion">#ff33b5e5</color>
+    <color name="color_secondary_holillusion">#ff33b5e5</color>
+    <color name="color_primary_maniamber">#fff6ca11</color>
+    <color name="color_secondary_maniamber">#fff6ca11</color>
+    <color name="color_primary_meltedbrainred">#ffef1c54</color>
+    <color name="color_secondary_meltedbrainred">#ffef1c54</color>
+    <!-- BTLG Old Accents (with secondary) -->
+    <color name="color_primary_dimigopink">#fffc6767</color>
+    <color name="color_secondary_dimigopink">#ffec008c</color>
+    <color name="color_primary_spookedpurple">#ff822b6b</color>
+    <color name="color_secondary_spookedpurple">#ffbc7c7c</color>
+    <color name="color_primary_pacleggerswarmth">#ff80106d</color>
+    <color name="color_secondary_pacleggerswarmth">#fff85545</color>
+    <color name="color_primary_nexoduscold">#ff2fb3d2</color>
+    <color name="color_secondary_nexoduscold">#ffdd5676</color>
+    <!-- Quetzal Palettes -->
+    <color name="color_primary_quetzal1">#ff7A83CF</color>
+    <color name="color_secondary_quetzal1">#ff2e3248</color>
+    <color name="color_primary_quetzal2">#ff372524</color>
+    <color name="color_secondary_quetzal2">#ff9A5956</color>
+    <color name="color_primary_quetzal3">#ff9695A0</color>
+    <color name="color_secondary_quetzal3">#ff9695A0</color>
+    <color name="color_primary_quetzal4">#ff2F66FC</color>
+    <color name="color_secondary_quetzal4">#ff2F66FC</color>
 </resources>
