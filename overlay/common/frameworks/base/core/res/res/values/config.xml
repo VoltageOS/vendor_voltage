@@ -203,5 +203,5 @@
     <integer name="config_keyChordPowerVolumeUp">1</integer>
 
     <!-- Default component for QR code scanner -->
-    <string name="config_defaultQrCodeComponent">app.grapheneos.camera/app.grapheneos.camera.ui.activities.QrTile</string>
+    <string name="config_defaultQrCodeComponent" translatable="false">app.grapheneos.camera/app.grapheneos.camera.ui.activities.QrTile</string>
 </resources>
