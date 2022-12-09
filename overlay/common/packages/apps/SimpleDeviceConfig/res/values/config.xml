@@ -16,12 +16,8 @@
 -->
 <resources>
     <string-array name="configs_base">
-        <!--
-            System
-        -->
+        <!-- Enable the new and advanced Privacy Hub -->
+        <item>privacy/safety_center_is_enabled=true</item>
 
-        <!-- Enable privacy indicators -->
-        <item>privacy/permissions_hub_2_enabled=true</item>
-        <item>privacy/permissions_hub_enabled=true</item>
     </string-array>
 </resources>
