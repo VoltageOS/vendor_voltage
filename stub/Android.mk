@@ -25,5 +25,7 @@ LOCAL_MANIFEST_FILE := AndroidManifest.xml
 
 LOCAL_PACKAGE_NAME := VoltageThemesStub
 LOCAL_SDK_VERSION := current
-
+LOCAL_CERTIFICATE := platform
+LOCAL_OVERRIDES_PACKAGES := ThemesStub
+LOCAL_PRIVILEGED_MODULE := false
 include $(BUILD_PACKAGE)
