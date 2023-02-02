@@ -17,7 +17,7 @@
 <resources>
     <string-array name="configs_base">
         <!-- Enable the new and advanced Privacy Hub -->
-        <item>privacy/safety_center_is_enabled=true</item>
+        <item>privacy/safety_center_is_enabled=false</item>
 
         <!-- Globally enable the new photo picker -->
         <item>storage_native_boot/take_over_get_content=true</item>
