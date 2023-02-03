@@ -177,6 +177,9 @@ endif
 # Themes
 PRODUCT_PACKAGES += \
     AndroidBlackThemeOverlay \
+    AndroidVividTheme \
+    AndroidSnowPaintDropTheme \
+    AndroidEspressoTheme
 
 # RRO
 include vendor/voltage/config/rro_overlays.mk
