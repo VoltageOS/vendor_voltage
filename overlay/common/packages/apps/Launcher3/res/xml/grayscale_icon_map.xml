@@ -379,6 +379,11 @@
     <icon drawable="@drawable/camera" package="com.google.android.GoogleCameraEng" />
     <icon drawable="@drawable/camera" package="com.google.android.GoogleCameraEng2" />
     <icon drawable="@drawable/camera" package="com.google.android.GoogleCameraEngR13F2" />
+    <icon drawable="@drawable/camera" package="com.google.android.GoogleCameraEngR14" />
+    <icon drawable="@drawable/camera" package="com.google.android.GoogleCameraEngR15" />
+    <icon drawable="@drawable/camera" package="com.google.android.GoogleCameraEngR16" />
+    <icon drawable="@drawable/camera" package="com.google.android.GoogleCameraEngR17" />
+    <icon drawable="@drawable/camera" package="com.google.android.GoogleCameraEngR18" />
     <icon drawable="@drawable/camera" package="com.google.android.GoogleCameraGood" />
     <icon drawable="@drawable/camera" package="com.google.android.GoogleCameraLMC" />
     <icon drawable="@drawable/camera" package="com.google.android.GoogleCameraLMCR11" />
