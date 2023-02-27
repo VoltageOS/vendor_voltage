@@ -288,6 +288,7 @@
     <icon drawable="@drawable/browser" package="org.droidtr.jelly" />
     <icon drawable="@drawable/browser" package="org.lineageos.jelly" />
     <icon drawable="@drawable/browser" package="com.cookiegames.smartcookie" />
+    <icon drawable="@drawable/browser" package="com.cookiejarapps.smartcookiebeta" />
     <icon drawable="@drawable/bsi_mobile" package="com.bsm.activity2" />
     <icon drawable="@drawable/btmouse" package="io.appground.blek" />
     <icon drawable="@drawable/bubbleunp" package="com.bubblesoft.android.bubbleupnp" />
