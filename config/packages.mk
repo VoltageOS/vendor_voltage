@@ -7,7 +7,7 @@ PRODUCT_PACKAGES += \
     ThemePicker \
     OmniJaws \
     WeatherIcons \
-    VoltageThemesStub \
+    ThemesStub \
     GameSpace \
     ParallelSpace \
     SetupWizard \
