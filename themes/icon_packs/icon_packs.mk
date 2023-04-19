@@ -6,7 +6,6 @@ PRODUCT_PACKAGES += \
 	IconPackCircularThemePickerOverlay \
         IconPackPUIAndroidOverlay \
         IconPackPUILauncherOverlay \
-        IconPackPUISettingsOverlay \
         IconPackPUISystemUIOverlay \
         IconPackPUIThemePickerOverlay \
 	IconPackVictorAndroidOverlay \
