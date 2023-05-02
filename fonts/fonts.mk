@@ -36,3 +36,5 @@ PRODUCT_PACKAGES += \
     FontHarmonyOSSansOverlay \
     FontOppoSansOverlay \
     FontLinotteOverlay \
+    FontGoogleSansOverlay \
+    FontOnePlusSansOverlay

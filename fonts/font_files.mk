@@ -38,6 +38,20 @@ PRODUCT_PACKAGES += \
     NotoSerif-Bold.ttf \
     NotoSerif-Italic.ttf \
     NotoSerif-Regular.ttf \
+    GoogleSans-Regular.ttf \
+    GoogleSans-Italic.ttf \
+    OnePlusSans-Black.ttf \
+    OnePlusSans-Bold.ttf \
+    OnePlusSans-BlackItalic.ttf \
+    OnePlusSans-BoldItalic.ttf \
+    OnePlusSans-Italic.ttf \
+    OnePlusSans-Light.ttf \
+    OnePlusSans-LightItalic.ttf \
+    OnePlusSans-Medium.ttf \
+    OnePlusSans-MediumItalic.ttf \
+    OnePlusSans-Regular.ttf \
+    OnePlusSans-Thin.ttf \
+    OnePlusSans-ThinItalic.ttf
 
 # Register new fonts
 PRODUCT_COPY_FILES += \
