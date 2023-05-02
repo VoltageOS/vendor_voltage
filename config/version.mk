@@ -13,7 +13,7 @@
 # limitations under the License.
 
 ANDROID_VERSION := 13
-VOLTAGEVERSION := 2.4
+VOLTAGEVERSION := 2.5
 
 VOLTAGE_BUILD_TYPE ?= UNOFFICIAL
 VOLTAGE_DATE_YEAR := $(shell date -u +%Y)
