@@ -1,0 +1,87 @@
+/**
+ * Copyright (C) 2021 The Proton AOSP Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+prebuilt_font {
+    name: "OnePlusSans-Black.ttf",
+    src: "OnePlusSans-Black.ttf",
+    product_specific: true,
+}
+
+prebuilt_font {
+    name: "OnePlusSans-BlackItalic.ttf",
+    src: "OnePlusSans-BlackItalic.ttf",
+    product_specific: true,
+}
+
+prebuilt_font {
+    name: "OnePlusSans-Bold.ttf",
+    src: "OnePlusSans-Bold.ttf",
+    product_specific: true,
+}
+
+prebuilt_font {
+    name: "OnePlusSans-BoldItalic.ttf",
+    src: "OnePlusSans-BoldItalic.ttf",
+    product_specific: true,
+}
+
+prebuilt_font {
+    name: "OnePlusSans-Italic.ttf",
+    src: "OnePlusSans-Italic.ttf",
+    product_specific: true,
+}
+
+prebuilt_font {
+    name: "OnePlusSans-Light.ttf",
+    src: "OnePlusSans-Light.ttf",
+    product_specific: true,
+}
+
+prebuilt_font {
+    name: "OnePlusSans-LightItalic.ttf",
+    src: "OnePlusSans-LightItalic.ttf",
+    product_specific: true,
+}
+
+prebuilt_font {
+    name: "OnePlusSans-Medium.ttf",
+    src: "OnePlusSans-Medium.ttf",
+    product_specific: true,
+}
+
+prebuilt_font {
+    name: "OnePlusSans-MediumItalic.ttf",
+    src: "OnePlusSans-MediumItalic.ttf",
+    product_specific: true,
+}
+
+prebuilt_font {
+    name: "OnePlusSans-Regular.ttf",
+    src: "OnePlusSans-Regular.ttf",
+    product_specific: true,
+}
+
+prebuilt_font {
+    name: "OnePlusSans-Thin.ttf",
+    src: "OnePlusSans-Thin.ttf",
+    product_specific: true,
+}
+
+prebuilt_font {
+    name: "OnePlusSans-ThinItalic.ttf",
+    src: "OnePlusSans-ThinItalic.ttf",
+    product_specific: true,
+}
