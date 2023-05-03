@@ -37,4 +37,5 @@ PRODUCT_PACKAGES += \
     FontOppoSansOverlay \
     FontLinotteOverlay \
     FontGoogleSansOverlay \
-    FontOnePlusSansOverlay
+    FontOnePlusSansOverlay \
+    FontSanFranciscoDisplayProSourceOverlay \

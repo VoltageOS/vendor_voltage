@@ -51,7 +51,8 @@ PRODUCT_PACKAGES += \
     OnePlusSans-MediumItalic.ttf \
     OnePlusSans-Regular.ttf \
     OnePlusSans-Thin.ttf \
-    OnePlusSans-ThinItalic.ttf
+    OnePlusSans-ThinItalic.ttf \
+    SanFranciscoDisplayPro.ttf
 
 # Register new fonts
 PRODUCT_COPY_FILES += \

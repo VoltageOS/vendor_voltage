@@ -20,6 +20,7 @@ FONTS = {
     "Source Serif": "serif",
     "Linotte": "linotte",
     "OnePlusSans": "op-sans",
+    "SanFranciscoDisplayPro": "sanfrancisco",
 }
 
 # Android.bp
