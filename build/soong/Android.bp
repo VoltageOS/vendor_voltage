@@ -1,4 +1,4 @@
-	// VoltageOS soong configs
+// VoltageOS soong configs
 
 bootstrap_go_package {
     name: "soong-voltage-generator",
@@ -54,7 +54,7 @@ cc_library_headers {
 soong_config_module_type {
     name: "aapt_version_code",
     module_type: "java_defaults",
-    config_namespace: "derpGlobalVars",
+    config_namespace: "voltageGlobalVars",
     value_variables: ["aapt_version_code"],
     properties: ["aaptflags"],
 }
@@ -211,6 +211,51 @@ needs_netd_direct_connect_rule {
     soong_config_variables: {
         needs_netd_direct_connect_rule: {
             cppflags: ["-DNEEDS_NETD_DIRECT_CONNECT_RULE"],
+        },
+    },
+}
+
+soong_config_module_type {
+    name: "health_charging_control",
+    module_type: "cc_defaults",
+    config_namespace: "voltageGlobalVars",
+    bool_variables: [
+        "target_health_charging_control_supports_toggle",
+        "target_health_charging_control_supports_bypass",
+        "target_health_charging_control_supports_deadline",
+    ],
+    value_variables: [
+        "target_health_charging_control_charging_path",
+        "target_health_charging_control_charging_enabled",
+        "target_health_charging_control_charging_disabled",
+        "target_health_charging_control_deadline_path",
+    ],
+    properties: ["cppflags"],
+}
+
+health_charging_control {
+    name: "health_charging_control_defaults",
+    soong_config_variables: {
+        target_health_charging_control_supports_toggle: {
+            cppflags: ["-DHEALTH_CHARGING_CONTROL_SUPPORTS_TOGGLE"],
+        },
+        target_health_charging_control_supports_bypass: {
+            cppflags: ["-DHEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS"],
+        },
+        target_health_charging_control_supports_deadline: {
+            cppflags: ["-DHEALTH_CHARGING_CONTROL_SUPPORTS_DEADLINE"],
+        },
+        target_health_charging_control_charging_path: {
+            cppflags: ["-DHEALTH_CHARGING_CONTROL_CHARGING_PATH=\"%s\""],
+        },
+        target_health_charging_control_charging_enabled: {
+            cppflags: ["-DHEALTH_CHARGING_CONTROL_CHARGING_ENABLED=\"%s\""],
+        },
+        target_health_charging_control_charging_disabled: {
+            cppflags: ["-DHEALTH_CHARGING_CONTROL_CHARGING_DISABLED=\"%s\""],
+        },
+        target_health_charging_control_deadline_path: {
+            cppflags: ["-DHEALTH_CHARGING_CONTROL_DEADLINE_PATH=\"%s\""],
         },
     },
 }
