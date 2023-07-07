@@ -4,8 +4,8 @@
     <item android:state_checked="true">
         <layer-list>
             <item>
-                <shape android:dither="true" android:tint="?android:colorControlActivated" android:visible="true" android:shape="ring" android:useLevel="false">
-                    <solid android:color="?android:colorControlActivated" />
+                <shape android:dither="true" android:tint="?android:attr/colorControlActivated" android:visible="true" android:shape="ring" android:useLevel="false">
+                    <solid android:color="?android:attr/colorControlActivated" />
                     <size android:height="0.0dip" android:width="0.0dip" />
                 </shape>
             </item>
@@ -14,8 +14,8 @@
     <item android:state_enabled="false">
         <layer-list>
             <item>
-                <shape android:dither="true" android:tint="?android:colorControlActivated" android:visible="true" android:shape="ring" android:useLevel="false">
-                    <solid android:color="?android:colorControlActivated" />
+                <shape android:dither="true" android:tint="?android:attr/colorControlActivated" android:visible="true" android:shape="ring" android:useLevel="false">
+                    <solid android:color="?android:attr/colorControlActivated" />
                     <size android:height="0.0dip" android:width="0.0dip" />
                 </shape>
             </item>
