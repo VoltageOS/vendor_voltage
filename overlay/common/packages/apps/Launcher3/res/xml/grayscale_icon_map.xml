@@ -578,6 +578,7 @@
     <icon drawable="@drawable/camera" package="org.codeaurora.snapcaa" />
     <icon drawable="@drawable/camera" package="org.codeaurora.snapcam" />
     <icon drawable="@drawable/camera" package="org.lineageos.aperture" />
+    <icon drawable="@drawable/camera" package="com.voltage.flash" />
     <icon drawable="@drawable/camera" package="org.lineageos.selfie" />
     <icon drawable="@drawable/camera" package="org.lineageos.snap" />
     <icon drawable="@drawable/camera_roll" package="us.koller.cameraroll" />
