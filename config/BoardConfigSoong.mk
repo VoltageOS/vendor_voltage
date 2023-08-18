@@ -46,7 +46,8 @@ SOONG_CONFIG_voltageGlobalVars += \
     target_health_charging_control_supports_toggle \
     target_init_vendor_lib \
     target_ld_shim_libs \
-    target_surfaceflinger_udfps_lib
+    target_surfaceflinger_udfps_lib \
+    uses_legacy_fd_fbdev
 
 SOONG_CONFIG_NAMESPACES += voltageNvidiaVars
 SOONG_CONFIG_voltageNvidiaVars += \
@@ -71,6 +72,7 @@ SOONG_CONFIG_voltageGlobalVars_target_alternative_futex_waiters := $(TARGET_ALTE
 SOONG_CONFIG_voltageNvidiaVars_uses_nv_enhancements := $(NV_ANDROID_FRAMEWORK_ENHANCEMENTS)
 SOONG_CONFIG_voltageQcomVars_supports_extended_compress_format := $(AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT)
 SOONG_CONFIG_voltageQcomVars_uses_pre_uplink_features_netmgrd := $(TARGET_USES_PRE_UPLINK_FEATURES_NETMGRD)
+SOONG_CONFIG_voltageGlobalVars_uses_legacy_fd_fbdev := $(TARGET_USES_LEGACY_FD_FBDEV)
 
 # Set default values
 BOOTLOADER_MESSAGE_OFFSET ?= 0
