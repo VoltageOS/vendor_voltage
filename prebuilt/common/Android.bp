@@ -1,6 +1,6 @@
 android_app_import {
-	name: "SmartCookieWeb",
-	apk: "SmartCookieWeb/SmartCookieWeb.apk",
+	name: "Jellyfish",
+	apk: "Jellyfish/Jellyfish.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: false,

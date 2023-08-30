@@ -22,12 +22,9 @@ endif
 PRODUCT_PACKAGES += \
     CombinedIconsOverlay
 
-# Smartcookieweb
-SMARTCOOKIEWEB ?= true
-ifeq ($(strip $(SMARTCOOKIEWEB)),true)
-     PRODUCT_PACKAGES += \
-         SmartCookieWeb
-endif
+# Browser
+PRODUCT_PACKAGES += \
+    Jellyfish
 
 # Graphene Apps
 ifeq ($(GrapheneApps),true)
