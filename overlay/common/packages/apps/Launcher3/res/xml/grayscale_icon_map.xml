@@ -425,6 +425,7 @@
     <icon drawable="@drawable/browser" package="foundation.e.browser" />
     <icon drawable="@drawable/browser" package="org.droidtr.jelly" />
     <icon drawable="@drawable/browser" package="org.lineageos.jelly" />
+    <icon drawable="@drawable/browser" package="org.eu.droid_ng.jellyfish" />
     <icon drawable="@drawable/browser" package="com.cookiegames.smartcookie" />
     <icon drawable="@drawable/browser" package="com.cookiejarapps.smartcookiebeta" />
     <icon drawable="@drawable/bsi_mobile" package="com.bsm.activity2" />
