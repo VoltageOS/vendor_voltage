@@ -30,9 +30,7 @@ PRODUCT_PACKAGES += \
     FontNotoSansOverlay \
     FontRecursiveCasualOverlay \
     FontRecursiveLinearOverlay \
-    FontRobotoOverlay \
     FontSourceSansOverlay \
-    FontSourceSerifOverlay \
     FontHarmonyOSSansOverlay \
     FontOppoSansOverlay \
     FontLinotteOverlay \
