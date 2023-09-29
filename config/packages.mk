@@ -5,32 +5,25 @@ PRODUCT_PACKAGES += \
     Eleven \
     Etar \
     ThemePicker \
-    OmniJaws \
-    WeatherIcons \
-    ThemesStub \
-    GameSpace \
-    ParallelSpace \
-    SetupWizard \
-    Seedvault
+    ThemesStub
 
-ifeq ($(VOLTAGE_BUILD_TYPE), OFFICIAL)
-    PRODUCT_PACKAGES += \
-	Updater
-endif
+# VoltageOS packages
+#PRODUCT_PACKAGES += \
+    # GameSpace \
+    # OmniJaws \
+    # ParallelSpace \
+    # SetupWizard \
+    # Seedvault \
+    # WeatherIcons \
 
-# Combined icons
-PRODUCT_PACKAGES += \
-    CombinedIconsOverlay
+#ifeq ($(VOLTAGE_BUILD_TYPE), OFFICIAL)
+#    PRODUCT_PACKAGES += \
+#	Updater
+#endif
 
 # Browser
 PRODUCT_PACKAGES += \
     Jellyfish
-
-# Graphene Apps
-ifeq ($(GrapheneApps),true)
-     PRODUCT_PACKAGES += \
-         Apps
-endif
 
 # Camera
 ifneq ($(PRODUCT_NO_CAMERA),true)
@@ -39,15 +32,15 @@ PRODUCT_PACKAGES += \
 endif
 
 # BtHelper
-PRODUCT_PACKAGES += \
-    BtHelper
+#PRODUCT_PACKAGES += \
+#    BtHelper
 
 # VoltageOS UDFPS icon animations
-EXTRA_UDFPS_ANIMATIONS ?= false
-ifeq ($(EXTRA_UDFPS_ANIMATIONS),true)
-PRODUCT_PACKAGES += \
-    UdfpsResources
-endif
+#EXTRA_UDFPS_ANIMATIONS ?= false
+#ifeq ($(EXTRA_UDFPS_ANIMATIONS),true)
+#PRODUCT_PACKAGES += \
+#    UdfpsResources
+#endif
 
 # Extra tools in Voltage
 PRODUCT_PACKAGES += \

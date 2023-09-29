@@ -107,16 +107,11 @@ PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 PRODUCT_SYSTEM_SERVER_DEBUG_INFO := false
 WITH_DEXPREOPT_DEBUG_INFO := false
 
-# Strip the local variable table and the local variable type table to reduce
-# the size of the system image. This has no bearing on stack traces, but will
-# leave less information available via JDWP.
-PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
-
 # Disable vendor restrictions
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
 # Require all requested packages to exist
-$(call enforce-product-packages-exist-internal,$(wildcard device/*/$(LINEAGE_BUILD)/$(TARGET_PRODUCT).mk),product_manifest.xml)
+$(call enforce-product-packages-exist-internal,$(wildcard device/*/$(VOLTAGE_BUILD)/$(TARGET_PRODUCT).mk),product_manifest.xml)
 
 # Enable whole-program R8 Java optimizations for SystemUI and system_server,
 # but also allow explicit overriding for testing and development.
@@ -183,22 +178,22 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/voltage/overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/voltage/overlay/common
 
 # Face Unlock
-TARGET_FACE_UNLOCK_SUPPORTED ?= true
-ifeq ($(TARGET_FACE_UNLOCK_SUPPORTED),true)
-PRODUCT_PACKAGES += \
-    FaceUnlockService
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.face_unlock_service.enabled=$(TARGET_FACE_UNLOCK_SUPPORTED)
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.biometrics.face.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.biometrics.face.xml
-endif
+#TARGET_FACE_UNLOCK_SUPPORTED ?= true
+#ifeq ($(TARGET_FACE_UNLOCK_SUPPORTED),true)
+#PRODUCT_PACKAGES += \
+#    FaceUnlockService
+#PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+#    ro.face_unlock_service.enabled=$(TARGET_FACE_UNLOCK_SUPPORTED)
+#PRODUCT_COPY_FILES += \
+#    frameworks/native/data/etc/android.hardware.biometrics.face.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.biometrics.face.xml
+#endif
 
 # Themes
-PRODUCT_PACKAGES += \
-    AndroidBlackThemeOverlay \
-    AndroidVividTheme \
-    AndroidSnowPaintDropTheme \
-    AndroidEspressoTheme
+#PRODUCT_PACKAGES += \
+#    AndroidBlackThemeOverlay \
+#    AndroidVividTheme \
+#    AndroidSnowPaintDropTheme \
+#    AndroidEspressoTheme
 
 # RRO
 include vendor/voltage/config/rro_overlays.mk
@@ -210,13 +205,13 @@ include vendor/voltage/config/version.mk
 include vendor/voltage/config/bootanimation.mk
 
 # Fonts
-$(call inherit-product, vendor/voltage/fonts/fonts.mk)
+#$(call inherit-product, vendor/voltage/fonts/fonts.mk)
 
 # Audio
 $(call inherit-product, vendor/voltage/audio/audio.mk)
 
 # # Icon packs
-$(call inherit-product, vendor/voltage/themes/icon_packs/icon_packs.mk)
+#$(call inherit-product, vendor/voltage/themes/icon_packs/icon_packs.mk)
 
 # Include extra packages
 include vendor/voltage/config/packages.mk
