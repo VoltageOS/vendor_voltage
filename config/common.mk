@@ -74,10 +74,6 @@ PRODUCT_COPY_FILES += \
 $(foreach f,$(wildcard vendor/voltage/prebuilt/common/etc/init/*.rc),\
 	$(eval PRODUCT_COPY_FILES += $(f):$(TARGET_COPY_OUT_SYSTEM)/etc/init/$(notdir $f)))
 
-# Enable Android Beam on all targets
-PRODUCT_COPY_FILES += \
-    vendor/voltage/config/permissions/android.software.nfc.beam.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.software.nfc.beam.xml
-
 # Privapp permissions
 PRODUCT_COPY_FILES += \
     vendor/voltage/config/permissions/privapp-permissions-custom.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-custom.xml
