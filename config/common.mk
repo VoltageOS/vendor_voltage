@@ -142,6 +142,10 @@ endif
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     dalvik.vm.systemuicompilerfilter=speed
 
+# Enable lockscreen live wallpaper
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    persist.wm.debug.lockscreen_live_wallpaper=true
+
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/voltage/config/partner_gms.mk
 
