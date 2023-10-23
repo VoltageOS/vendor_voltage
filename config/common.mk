@@ -185,8 +185,8 @@ DEVICE_PACKAGE_OVERLAYS += vendor/voltage/overlay/common
 #endif
 
 # Themes
-#PRODUCT_PACKAGES += \
-#    AndroidBlackThemeOverlay \
+PRODUCT_PACKAGES += \
+    AndroidBlackThemeOverlay \
 #    AndroidVividTheme \
 #    AndroidSnowPaintDropTheme \
 #    AndroidEspressoTheme
@@ -207,7 +207,7 @@ include vendor/voltage/config/bootanimation.mk
 $(call inherit-product, vendor/voltage/audio/audio.mk)
 
 # # Icon packs
-#$(call inherit-product, vendor/voltage/themes/icon_packs/icon_packs.mk)
+$(call inherit-product, vendor/voltage/themes/icon_packs/icon_packs.mk)
 
 # Include extra packages
 include vendor/voltage/config/packages.mk
