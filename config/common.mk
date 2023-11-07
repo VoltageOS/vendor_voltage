@@ -114,26 +114,9 @@ $(call enforce-product-packages-exist-internal,$(wildcard device/*/$(VOLTAGE_BUI
 SYSTEM_OPTIMIZE_JAVA ?= true
 SYSTEMUI_OPTIMIZE_JAVA ?= true
 
-# Config
-PRODUCT_PACKAGES += \
-    SimpleDeviceConfig
-
 # Charger
 PRODUCT_PACKAGES += \
     product_charger_res_images
-
-# Filesystems tools
-PRODUCT_PACKAGES += \
-    fsck.ntfs \
-    mkfs.ntfs \
-    mount.ntfs
-
-PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
-    system/bin/fsck.ntfs \
-    system/bin/mkfs.ntfs \
-    system/bin/mount.ntfs \
-    system/%/libfuse-lite.so \
-    system/%/libntfs-3g.so
 
 # Storage manager
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
@@ -142,10 +125,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # These packages are excluded from user builds
 PRODUCT_PACKAGES_DEBUG += \
     procmem
-
-# Root
-PRODUCT_PACKAGES += \
-    adb_root
 
 # Dex/ART optimization
 PRODUCT_DEXPREOPT_SPEED_APPS += \
