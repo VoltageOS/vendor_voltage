@@ -4,11 +4,11 @@ PRODUCT_PACKAGES += \
     Eleven \
     Etar \
     ThemePicker \
-    ThemesStub
+    ThemesStub \
+    GameSpace
 
 # VoltageOS packages
 #PRODUCT_PACKAGES += \
-    # GameSpace \
     # OmniJaws \
     # ParallelSpace \
     # SetupWizard \
