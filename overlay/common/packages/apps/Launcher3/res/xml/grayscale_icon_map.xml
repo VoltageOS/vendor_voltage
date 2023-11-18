@@ -570,11 +570,13 @@
     <icon drawable="@drawable/camera" package="com.google.android.GoogleCameraEngR16" />
     <icon drawable="@drawable/camera" package="com.google.android.GoogleCameraEngR17" />
     <icon drawable="@drawable/camera" package="com.google.android.GoogleCameraEngR18" />
+    <icon drawable="@drawable/camera" package="com.google.android.GoogleCameraEngR18F1" />
     <icon drawable="@drawable/camera" package="com.google.android.GoogleCameraGood" />
     <icon drawable="@drawable/camera" package="com.google.android.GoogleCameraLMC" />
     <icon drawable="@drawable/camera" package="com.google.android.GoogleCameraLMCR11" />
     <icon drawable="@drawable/camera" package="com.google.android.GoogleCameraLMCR13" />
     <icon drawable="@drawable/camera" package="com.google.android.GoogleCameraLMCR17" />
+    <icon drawable="@drawable/camera" package="com.google.android.GoogleCameraLMCR18" />
     <icon drawable="@drawable/camera" package="com.google.android.GoogleCameraPixelX" />
     <icon drawable="@drawable/camera" package="com.google.android.GoogleCameraTigr" />
     <icon drawable="@drawable/camera" package="com.google.android.GoogleCamerax" />
@@ -605,7 +607,6 @@
     <icon drawable="@drawable/camera" package="com.shamim.cam" />
     <icon drawable="@drawable/camera" package="com.simplemobiletools.camera" />
     <icon drawable="@drawable/camera" package="com.sonyericsson.android.camera" />
-    <icon drawable="@drawable/camera" package="com.ss.android.ugc.aweme" />
     <icon drawable="@drawable/camera" package="com.tcl.camera" />
     <icon drawable="@drawable/camera" package="com.transsion.camera" />
     <icon drawable="@drawable/camera" package="foundation.e.camera" />
