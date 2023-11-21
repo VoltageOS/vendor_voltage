@@ -114,10 +114,6 @@ $(call enforce-product-packages-exist-internal,$(wildcard device/*/$(VOLTAGE_BUI
 SYSTEM_OPTIMIZE_JAVA ?= true
 SYSTEMUI_OPTIMIZE_JAVA ?= true
 
-# Charger
-PRODUCT_PACKAGES += \
-    product_charger_res_images
-
 # Storage manager
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.storage_manager.enabled=true
