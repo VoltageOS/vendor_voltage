@@ -24,12 +24,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Jellyfish
 
-# Camera
-ifneq ($(PRODUCT_NO_CAMERA),true)
-PRODUCT_PACKAGES += \
-    Flash
-endif
-
 # BtHelper
 #PRODUCT_PACKAGES += \
 #    BtHelper
