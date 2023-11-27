@@ -7,13 +7,13 @@ PRODUCT_PACKAGES += \
     ThemesStub \
     GameSpace \
     OmniJaws \
-    WeatherIcons
+    WeatherIcons \
+    SetupWizard \
+    Seedvault \
 
 # VoltageOS packages
 #PRODUCT_PACKAGES += \
     # ParallelSpace \
-    # SetupWizard \
-    # Seedvault \
 
 #ifeq ($(VOLTAGE_BUILD_TYPE), OFFICIAL)
 #    PRODUCT_PACKAGES += \
