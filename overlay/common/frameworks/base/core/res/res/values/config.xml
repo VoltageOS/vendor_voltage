@@ -217,10 +217,6 @@
          auto-brightness. If unset, then it just gets the default sensor of type TYPE_LIGHT. -->
     <string name="config_displayLightSensorType" translatable="false">android.sensor.light</string>
 
-    <!-- Whether the lock screen is allowed to run its own live wallpaper,
-         different from the home screen wallpaper. -->
-    <bool name="config_independentLockscreenLiveWallpaper">true</bool>
-
     <!-- List of system components which are allowed to receive ServiceState entries in an
          un-sanitized form, even if the location toggle is off. This is intended ONLY for system
          components, such as the telephony stack, which require access to the full ServiceState for
