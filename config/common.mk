@@ -193,6 +193,9 @@ include vendor/voltage/config/version.mk
 # BootAnimation
 include vendor/voltage/config/bootanimation.mk
 
+# Certification
+$(call inherit-product-if-exists, vendor/certification/config.mk)
+
 # Fonts
 $(call inherit-product, vendor/voltage/fonts/fonts.mk)
 
