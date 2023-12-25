@@ -15,10 +15,10 @@ PRODUCT_PACKAGES += \
 #PRODUCT_PACKAGES += \
     # ParallelSpace \
 
-#ifeq ($(VOLTAGE_BUILD_TYPE), OFFICIAL)
-#    PRODUCT_PACKAGES += \
-#	Updater
-#endif
+ifeq ($(VOLTAGE_BUILD_TYPE), OFFICIAL)
+    PRODUCT_PACKAGES += \
+	Updater
+endif
 
 # Browser
 PRODUCT_PACKAGES += \
