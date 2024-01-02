@@ -10,10 +10,7 @@ PRODUCT_PACKAGES += \
     WeatherIcons \
     SetupWizard \
     Seedvault \
-
-# VoltageOS packages
-#PRODUCT_PACKAGES += \
-    # ParallelSpace \
+    ParallelSpace \
 
 ifeq ($(VOLTAGE_BUILD_TYPE), OFFICIAL)
     PRODUCT_PACKAGES += \
