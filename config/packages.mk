@@ -11,6 +11,7 @@ PRODUCT_PACKAGES += \
     SetupWizard \
     Seedvault \
     ParallelSpace \
+    LogViewer
 
 ifeq ($(VOLTAGE_BUILD_TYPE), OFFICIAL)
     PRODUCT_PACKAGES += \
