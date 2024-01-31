@@ -26,12 +26,11 @@ PRODUCT_PACKAGES += \
 #PRODUCT_PACKAGES += \
 #    BtHelper
 
-# VoltageOS UDFPS icon animations
-#EXTRA_UDFPS_ANIMATIONS ?= false
-#ifeq ($(EXTRA_UDFPS_ANIMATIONS),true)
-#PRODUCT_PACKAGES += \
-#    UdfpsResources
-#endif
+# VoltageOS UDFPS animations
+ifeq ($(EXTRA_UDFPS_ANIMATIONS),true)
+PRODUCT_PACKAGES += \
+    UdfpsAnimations
+endif
 
 # Extra tools in Voltage
 PRODUCT_PACKAGES += \
