@@ -20,26 +20,10 @@ LOCAL_PATH := vendor/voltage/fonts
 
 PRODUCT_PACKAGES += \
     Dosis-VF.ttf \
-    CutiveMono.ttf \
-    DroidSansMono.ttf \
-    Roboto-Regular.ttf \
     Linotte.ttf \
     Manrope-VF.ttf \
-    NotoSans-Italic-VF.ttf \
-    NotoSans-VF.ttf \
     OppoSans-En-Regular.ttf \
     Recursive-VF.ttf \
-    RobotoFallback-VF.ttf \
-    RobotoSystem-VF.ttf \
-    RobotoStatic-Regular.ttf \
-    SourceSans3-Italic-VF.otf \
-    SourceSans3-VF.otf \
-    NotoSerif-BoldItalic.ttf \
-    NotoSerif-Bold.ttf \
-    NotoSerif-Italic.ttf \
-    NotoSerif-Regular.ttf \
-    GoogleSans-Regular.ttf \
-    GoogleSans-Italic.ttf \
     OnePlusSans-Black.ttf \
     OnePlusSans-Bold.ttf \
     OnePlusSans-BlackItalic.ttf \
@@ -56,7 +40,7 @@ PRODUCT_PACKAGES += \
 
 # Register new fonts
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/fonts_customization.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/fonts_customization.xml \
+    $(LOCAL_PATH)/fonts_customization.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/fonts_customization.xml
 
 # Include extra addon fonts
 -include vendor/voltage/fonts/extra/extra.mk

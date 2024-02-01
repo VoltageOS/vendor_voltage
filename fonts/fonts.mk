@@ -20,20 +20,17 @@ include vendor/voltage/fonts/font_files.mk
 
 # Register custom fonts
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/fonts_customization.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/fonts_customization.xml \
+    $(LOCAL_PATH)/fonts_customization.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/fonts_customization.xml
 
 # Overlays for UI font styles
 PRODUCT_PACKAGES += \
     FontHKGroteskOverlay \
     FontDosisOverlay \
     FontManropeOverlay \
-    FontNotoSansOverlay \
     FontRecursiveCasualOverlay \
     FontRecursiveLinearOverlay \
-    FontSourceSansOverlay \
     FontHarmonyOSSansOverlay \
     FontOppoSansOverlay \
     FontLinotteOverlay \
-    FontGoogleSansOverlay \
     FontOnePlusSansOverlay \
-    FontSanFranciscoDisplayProSourceOverlay \
+    FontSanFranciscoDisplayProSourceOverlay
