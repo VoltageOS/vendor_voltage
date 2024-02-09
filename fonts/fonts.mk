@@ -32,5 +32,6 @@ PRODUCT_PACKAGES += \
     FontHarmonyOSSansOverlay \
     FontOppoSansOverlay \
     FontLinotteOverlay \
+    FontFucekOverlay \
     FontOnePlusSansOverlay \
     FontSanFranciscoDisplayProSourceOverlay

@@ -21,6 +21,7 @@ LOCAL_PATH := vendor/voltage/fonts
 PRODUCT_PACKAGES += \
     Dosis-VF.ttf \
     Linotte.ttf \
+    Fucek.ttf \
     Manrope-VF.ttf \
     OppoSans-En-Regular.ttf \
     Recursive-VF.ttf \
