@@ -19,6 +19,7 @@ FONTS = {
     "Source Sans": "source-sans",
     "Source Serif": "serif",
     "Linotte": "linotte",
+    "Fucek": "fucek",
     "OnePlusSans": "op-sans",
     "SanFranciscoDisplayPro": "sanfrancisco",
 }
