@@ -59,8 +59,6 @@
         <item>com.android.networkstack.tethering</item>
     </string-array>
 
-    <bool name="config_cellBroadcastAppLinks">true</bool>
-
     <!-- Disable stock OTA components if installed -->
     <string-array name="config_globallyDisabledComponents" translatable="false">
         <item>com.android.vending/com.google.android.finsky.systemupdate.SystemUpdateSettingsContentProvider</item>
