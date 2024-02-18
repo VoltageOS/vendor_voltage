@@ -205,9 +205,6 @@
     -->
     <integer name="config_keyChordPowerVolumeUp">1</integer>
 
-    <!-- Default component for QR code scanner -->
-    <string name="config_defaultQrCodeComponent" translatable="false">org.lineageos.aperture/.QrScannerActivity</string>
-
     <!-- Whether or not to enable the lock screen entry point for the QR code scanner. -->
     <bool name="config_enableQrCodeScannerOnLockScreen">true</bool>
 
