@@ -223,7 +223,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     DocumentsUIOverlay \
     NetworkStackOverlay \
-    PermissionControllerOverlay
+    PermissionControllerOverlay \
+    VoltageFrameworksOverlay
 
 # SetupWizard
 PRODUCT_PRODUCT_PROPERTIES += \
