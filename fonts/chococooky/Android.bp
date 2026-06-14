@@ -1,0 +1,5 @@
+prebuilt_font {
+    name: "Chococooky.ttf",
+    src: "Chococooky.ttf",
+    product_specific: true,
+}

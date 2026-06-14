@@ -34,6 +34,7 @@ PRODUCT_PACKAGES += \
     FontOppoSansOverlay \
     FontLinotteOverlay \
     FontFucekOverlay \
+    FontChocoCookyOverlay \
     FontGoogleSansOverlay \
     FontGoogleSansFlexOverlay \
     FontRookeryOverlay \

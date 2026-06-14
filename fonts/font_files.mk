@@ -26,6 +26,7 @@ PRODUCT_PACKAGES += \
     Inter-Variable.ttf \
     Linotte.ttf \
     Fucek.ttf \
+    Chococooky.ttf \
     Manrope-VF.ttf \
     OppoSans-En-Regular.ttf \
     Recursive-VF.ttf \

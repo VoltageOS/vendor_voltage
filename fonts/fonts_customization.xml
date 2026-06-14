@@ -925,7 +925,14 @@
     <alias name="goudy" to="fucek" />
     <alias name="fantasy" to="fucek" />
     <alias name="ITC Stone Serif" to="fucek" />
+    <!-- Choco Cooky Font -->
+    <family customizationType="new-named-family" name="chococooky">
+        <font weight="400" style="normal">Chococooky.ttf</font>
+    </family>
 
+    <alias name="chococooky-semi-bold" to="chococooky" weight="600" />
+    <alias name="chococooky-bold" to="chococooky" weight="700" />
+    
     <!-- Fluid Sans -->
     <family customizationType="new-named-family" name="fluid-sans">
         <font weight="400" style="normal">FluidSans-Regular.ttf</font>
