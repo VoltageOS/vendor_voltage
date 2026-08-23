@@ -4,16 +4,63 @@ export LLVM_AOSP_PREBUILTS_VERSION="${CLANG_VERSION}"
 RUST_VERSION=$(grep 'RustDefaultVersion =' ${ANDROID_BUILD_TOP}/build/soong/rust/config/global.go | awk '{print $3}' | awk -F '"' '{print $2}')
 export RUST_AOSP_PREBUILTS_VERSION="${RUST_VERSION}"
 
+function _voltage_ota_json()
+{
+    local out="${OUT:-$ANDROID_PRODUCT_OUT}"
+    [ -z "$out" ] && return 1
+    echo "$out/$(basename "$out").json"
+}
+
+function otajson()
+{
+    local json="$(_voltage_ota_json)"
+    if [ -z "$json" ]; then
+        echo "otajson: nothing lunched, run 'breakfast <device>' first"
+        return 1
+    fi
+
+    [ -s "$json" ] || return 0
+
+    if ! grep -q '"response"' "$json"; then
+        echo "otajson: $json is not an OTA json, refusing to copy it"
+        return 1
+    fi
+
+    local device="$(basename "$json" .json)"
+    local dest="$ANDROID_BUILD_TOP/vendor/ota"
+    if [ ! -d "$dest" ]; then
+        echo "otajson: $dest is missing, is the ota repo synced?"
+        return 1
+    fi
+
+    cp -f "$json" "$dest/$device.json" || return 1
+    echo "otajson: updated vendor/ota/$device.json"
+
+    if [ "$VOLTAGE_OTA_AUTOCOMMIT" = "true" ]; then
+        local zip="$(grep '"filename"' "$json" | head -1 | cut -d'"' -f4)"
+        git -C "$dest" add "$device.json" && \
+            git -C "$dest" commit -q -m "$device: ${zip:-OTA update}" && \
+            echo "otajson: committed vendor/ota/$device.json"
+    fi
+}
+
 function brunch()
 {
     breakfast $*
-    if [ $? -eq 0 ]; then
-        mka bacon
-    else
+    if [ $? -ne 0 ]; then
         echo "No such item in brunch menu. Try 'breakfast'"
         return 1
     fi
-    return $?
+
+    local json="$(_voltage_ota_json)"
+    [ -n "$json" ] && rm -f "$json"
+
+    mka bacon
+    local ret=$?
+
+    [ $ret -eq 0 ] && otajson
+
+    return $ret
 }
 
 function dist()
