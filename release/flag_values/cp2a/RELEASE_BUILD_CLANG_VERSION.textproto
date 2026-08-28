@@ -1,0 +1,4 @@
+name: "RELEASE_BUILD_CLANG_VERSION"
+value: {
+  string_value: "clang-r596125"
+}
