@@ -316,4 +316,14 @@
 
     <!-- If AOD can show an ambient version of the wallpaper -->
     <bool name="config_dozeSupportsAodWallpaper">true</bool>
+
+    <!-- The default list of possible CMF Names|Style|ColorSource. This array can be
+         overridden device-specific resources. A wildcard (fallback) must be supplied.
+         Name   - Read from `ro.boot.hardware.color` sysprop. Fallback (*) required.
+         Styles - frameworks/libs/systemui/monet/src/com/android/systemui/monet/Style.java
+         Color  - `home_wallpaper` (for color extraction) or a comma-separated list of
+                  hexadecimal int (#FFcc99,#aabbcc). -->
+    <string-array name="theming_defaults" translatable="false">
+        <item>*|TONAL_SPOT|#8C841D</item>
+    </string-array>
 </resources>
