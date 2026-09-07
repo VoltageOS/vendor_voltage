@@ -24,6 +24,7 @@ aconfig_value_set {
         "aconfig-values-cp2a-com.android.launcher3-all",
         "aconfig-values-cp2a-com.android.systemui-all",
         "aconfig-values-cp2a-com.android.systemui.shared-all",
+        "aconfig-values-cp2a-com.android.settings.accessibility-all",
         "aconfig-values-cp2a-com.android.wm.shell-all",
         "aconfig-values-cp2a-com.android.providers.media-all",
     ],
