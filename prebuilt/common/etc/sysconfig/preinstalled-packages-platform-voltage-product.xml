@@ -129,7 +129,7 @@
         <do-not-install-in user-type="android.os.usertype.profile.CLONE" />
     </install-in-user-type>
     <!-- Gamespace -->
-    <install-in-user-type package="io.chaldeaprjkt.gamespace">
+    <install-in-user-type package="com.voltage.gamespace">
         <install-in user-type="FULL" />
         <install-in user-type="PROFILE" />
         <do-not-install-in user-type="android.os.usertype.profile.CLONE" />

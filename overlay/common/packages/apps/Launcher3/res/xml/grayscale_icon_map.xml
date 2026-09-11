@@ -3158,7 +3158,7 @@
     <icon drawable="@drawable/game_informer" package="com.gameinformer.tablet" />
     <icon drawable="@drawable/game_jolt" package="com.gamejolt.app" />
     <icon drawable="@drawable/game_space" package="com.neoteric.gamespace" />
-    <icon drawable="@drawable/game_space" package="io.chaldeaprjkt.gamespace" />
+    <icon drawable="@drawable/game_space" package="com.voltage.gamespace" />
     <icon drawable="@drawable/gameboy" package="com.fastemulator.gbafree" />
     <icon drawable="@drawable/gameboy" package="com.fastemulator.gbcfree" />
     <icon drawable="@drawable/gameboy" package="com.johnemulators.johngba" />
