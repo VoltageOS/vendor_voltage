@@ -8,6 +8,7 @@ PRODUCT_PACKAGES += \
     Jellyfish \
     LogViewer \
     Gramophone \
+    VoltageCrimson \
     GameSpace \
     VoltageSetupWizard \
     Seedvault \

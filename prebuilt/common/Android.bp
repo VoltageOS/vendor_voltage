@@ -36,8 +36,8 @@ android_app_import {
 }
 
 android_app_import {
-    name: "VoltageJump",
-    apk: "VoltageJump/VoltageJump.apk",
+    name: "VoltageCrimson",
+    apk: "VoltageCrimson/VoltageCrimson.apk",
     presigned: true,
     preprocessed: true,
     product_specific: true,
