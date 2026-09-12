@@ -128,6 +128,10 @@ ifeq ($(TARGET_FACE_UNLOCK_SUPPORTED),true)
 PRODUCT_PACKAGES += \
     FaceUnlock
 
+# Silence noisy Megvii face unlock logging
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    log.tag.mgulk=S
+
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     ro.face.sense_service=true
 
