@@ -20,6 +20,7 @@ aconfig_value_set {
         "aconfig-values-cp2a-android.content.pm-all",
         "aconfig-values-cp2a-android.hardware.biometrics-all",
         "aconfig-values-cp2a-android.security-all",
+        "aconfig-values-cp2a-android.provider-all",
         "aconfig-values-cp2a-com.android.launcher3-all",
         "aconfig-values-cp2a-com.android.systemui-all",
         "aconfig-values-cp2a-com.android.systemui.shared-all",
