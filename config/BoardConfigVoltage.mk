@@ -1,4 +1,5 @@
 # SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
+# SPDX-FileCopyrightText: 2026 VoltageOS
 # SPDX-License-Identifier: Apache-2.0
 
 # OTA
@@ -14,3 +15,6 @@ ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
 endif
 
 include vendor/voltage/config/BoardConfigSoong.mk
+
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += vendor/voltage/sepolicy/private
+BOARD_VENDOR_SEPOLICY_DIRS += vendor/voltage/sepolicy/vendor

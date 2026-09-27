@@ -1,0 +1,12 @@
+# SPDX-FileCopyrightText: 2026 VoltageOS
+# SPDX-License-Identifier: Apache-2.0
+/(vendor|system/vendor)/etc/selinux/.*\.cil u:object_r:sepolicy_file:s0
+/(vendor|system/vendor)/etc/selinux/precompiled_sepolicy u:object_r:sepolicy_file:s0
+/(vendor|system/vendor)/etc/selinux/precompiled_sepolicy\.plat_and_mapping\.sha256 u:object_r:sepolicy_file:s0
+/(vendor|system/vendor)/etc/selinux/vendor_file_contexts u:object_r:file_contexts_file:s0
+/(vendor|system/vendor)/etc/selinux/vendor_property_contexts u:object_r:property_contexts_file:s0
+/(vendor|system/vendor)/etc/selinux/vendor_seapp_contexts u:object_r:seapp_contexts_file:s0
+/(vendor|system/vendor)/etc/selinux/vendor_hwservice_contexts u:object_r:hwservice_contexts_file:s0
+/(vendor|system/vendor)/etc/selinux/vendor_keystore2_key_contexts u:object_r:keystore2_key_contexts_file:s0
+/(vendor|system/vendor)/etc/selinux/vendor_mac_permissions\.xml u:object_r:mac_perms_file:s0
+/(vendor|system/vendor)/etc/selinux/vendor_tee_service_contexts u:object_r:tee_service_contexts_file:s0
