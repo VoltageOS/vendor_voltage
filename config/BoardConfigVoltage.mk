@@ -1,6 +1,9 @@
 # SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
 # SPDX-License-Identifier: Apache-2.0
 
+# OTA
+BUILD_BROKEN_SRC_DIR_RW_ALLOWLIST := $(abspath vendor/ota)
+
 # Recovery
 BOARD_USES_FULL_RECOVERY_IMAGE ?= true
 
