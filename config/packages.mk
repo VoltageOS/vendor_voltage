@@ -1,6 +1,7 @@
 # VoltageOS packages
 PRODUCT_PACKAGES += \
     SimpleDeviceConfig \
+    Canvas \
     Covers \
     Etar \
     ThemePicker \
