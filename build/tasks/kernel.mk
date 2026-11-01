@@ -294,10 +294,6 @@ ifneq ($(TARGET_KERNEL_KCONFIG_EXT_PREFIX),)
     KERNEL_MAKE_FLAGS += KCONFIG_EXT_PREFIX=$(shell python3 -c 'import os,sys;print(os.path.relpath(*(sys.argv[1:])))' $(TARGET_KERNEL_KCONFIG_EXT_PREFIX) $(KERNEL_SRC))/
 endif
 
-ifneq ($(TARGET_KERNEL_ADDITIONAL_FLAGS),)
-    KERNEL_MAKE_FLAGS += $(TARGET_KERNEL_ADDITIONAL_FLAGS)
-endif
-
 # Internal implementation of make-kernel-target
 # $(1): output path (The value passed to O=)
 # $(2): target to build (eg. defconfig, modules, dtbo.img)

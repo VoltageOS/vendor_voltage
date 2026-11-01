@@ -349,6 +349,11 @@ ifneq ($(TARGET_KERNEL_CLANG_AUTOFDO_PROFILE),none)
     endif
 endif
 
+# Additional make flags
+ifneq ($(TARGET_KERNEL_ADDITIONAL_FLAGS),)
+    KERNEL_MAKE_FLAGS += $(TARGET_KERNEL_ADDITIONAL_FLAGS)
+endif
+
 # Set the out dir for the kernel's O= arg
 # This needs to be an absolute path, so only set this if the standard out dir isn't used
 OUT_DIR_PREFIX := $(shell echo $(OUT_DIR) | sed -e 's|/target/.*$$||g')
